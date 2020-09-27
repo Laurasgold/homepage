@@ -19,6 +19,10 @@
   color: var(--darkGray);
 }
 
+.black-text {
+  color: var(--black);
+}
+
 .orange-text {
   color: var(--orange);
 }

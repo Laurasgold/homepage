@@ -32,8 +32,8 @@ const IndexPage = ({ data, location }) => (
     </HeroBackgroundImg>
     <Wrapper>
       <Grid cols={[1, 1, 2]} className="container">
-        <div>
-          <h2>What is Tofu?</h2>
+        <div className="margins">
+          <h2 className="no-top-margin">What is Tofu?</h2>
           <p>
             Tofu is a protein made much in the same way cheese is made from milk
             — by condensing milk made from soybeans. The texture depends on how
@@ -45,29 +45,40 @@ const IndexPage = ({ data, location }) => (
             cholesterol free, and vegan!
           </p>
         </div>
+        <div className="margins">
+          <iframe
+            width="547"
+            height="328"
+            src="https://www.youtube.com/embed/RhEB1sjSSf8"
+            frameborder="0"
+            style={{ margin: "0 auto" }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </Grid>
-      <Grid cols={[1, 1, 3]} className="center-text container">
-        <Card>
-          <h3 className="orange-text">Traditional</h3>
-          <p>
+      <Grid cols={[1, 1, 3]} className="center-text bottom-padding">
+        <div>
+          <h2 className="orange-text">Traditional</h2>
+          <p className="large">
             Our tofu house prides itself in preserving the art of tofu making
             that dates back thousands of years.
           </p>
-        </Card>
-        <Card>
-          <h3 className="orange-text">Healthy</h3>
-          <p>
+        </div>
+        <div>
+          <h2 className="orange-text">Healthy</h2>
+          <p className="large">
             A satisfying and nutritious plant based protein for all types of
             diets.
           </p>
-        </Card>
-        <Card>
-          <h3 className="orange-text">Handmade</h3>
-          <p>
+        </div>
+        <div>
+          <h2 className="orange-text">Handmade</h2>
+          <p className="large">
             Handmade tofu made same day. Fresh tofu made using traditional
             Korean methods for over 100 years.
           </p>
-        </Card>
+        </div>
       </Grid>
     </Wrapper>
     <div className="gray-bg">
