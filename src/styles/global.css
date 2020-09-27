@@ -1,14 +1,3 @@
-/* Change root sizes above medium breakpoint */
-@media (min-width: 880px) {
-  :root {
-    --margins: 8rem 0 2rem;
-    --topSectionPadding: 7rem;
-    --bottomSectionPadding: 12.5rem;
-    --baseSectionPadding: 15rem;
-    --baseMargin: 8rem;
-  }
-}
-
 html {
   /* Sets 1 REM to 10px */
   font-size: 62.5%;

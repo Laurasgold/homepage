@@ -4,7 +4,7 @@
 
 /* --- Color Classes --- */
 .gray-bg {
-  background: var(--lightesterGray);
+  background: var(--darkGray);
 }
 
 .black-bg {
@@ -17,6 +17,10 @@
 
 .gray-text {
   color: var(--darkGray);
+}
+
+.orange-text {
+  color: var(--orange);
 }
 
 .red-text {

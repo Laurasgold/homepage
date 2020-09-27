@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import { media } from './breakpoints'
+import styled, { css } from "styled-components"
+import { media } from "./breakpoints"
 // Grids & Utilities
 // 🔒 Not configurable
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -14,7 +14,7 @@ export const Flex = styled.div`
     margin-left: 20px;
   }
   justify-content: ${({ scalign }: { scalign?: string }) =>
-    scalign || 'space-between'};
+    scalign || "space-between"};
 `
 
 // Used anytime you need a grid of anything.
@@ -25,7 +25,7 @@ export const Grid = styled.div`
   grid-gap: var(--basePadding);
   margin: 0 auto;
   ${({ cols = [] }) => {
-    if (typeof cols === 'object') {
+    if (typeof cols === "object") {
       return cols.map((_, index: number) => {
         // This nifty map goes over each col and adds style to a breakpoint
         const key = Object.keys(media)[index]
@@ -49,7 +49,7 @@ export const Card = styled.div`
   padding: var(--cardPadding);
   border-radius: var(--cardRadius);
   background: var(--white);
-  box-shadow: var(--elevation-1);
+  box-shadow: var(--elevation-3);
   > *:first-child {
     margin-top: 0;
   }
@@ -63,12 +63,12 @@ export const Card = styled.div`
 //  * width: "tight" or width in px
 export const Wrapper = styled.div`
   padding: ${({ padding }: { padding: string }) =>
-    `0 ${padding || 'var(--basePadding)'}`};
+    `0 ${padding || "var(--basePadding)"}`};
   margin: 0 auto;
-  max-width: ${({ maxWidth }) => maxWidth || '1146px'};
+  max-width: ${({ maxWidth }) => maxWidth || "1146px"};
   ${media.large`
     max-width: ${({ width }: { width: string }) =>
-      width === 'tight' ? '940px' : width};
+      width === "tight" ? "940px" : width};
   `};
 `
 
@@ -80,6 +80,6 @@ export const Cols = styled.div`
   grid-template-columns: 1fr;
   ${media.medium`
     grid-template-columns: ${({ isReverse }: { isReverse: boolean }) =>
-      isReverse ? '360px 1fr' : '1fr 400px'};
+      isReverse ? "360px 1fr" : "1fr 400px"};
   `};
 `
