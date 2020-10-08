@@ -28,9 +28,9 @@ const MobileNav = ({ links, closeMenu }: Props) => (
           </Link>
         </li>
       ))}
-      <li>
+      {/* <li>
         <Button size="small">Order Now</Button>
-      </li>
+      </li> */}
     </ul>
   </NavBar>
 )

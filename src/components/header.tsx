@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import { below } from "../styles"
 import Nav from "./Nav"
 import MobileMenu from "./MobileMenu"
-import { useScrollPosition } from "../hooks"
 import logo from "../images/stone_white_logo.png"
 
 const links = [

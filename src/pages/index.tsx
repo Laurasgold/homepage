@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import styled from "styled-components"
 import Layout from "../components/layout"
@@ -25,7 +25,9 @@ const IndexPage = ({ data, location }) => (
             >
               Homemade Tofu Made Same Day
             </p>
-            <Button>View Menu</Button>
+            <Button as={Link} to="/menu/">
+              View Menu
+            </Button>
           </div>
         </Grid>
       </Wrapper>
