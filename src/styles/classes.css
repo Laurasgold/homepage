@@ -4,7 +4,7 @@
 
 /* --- Color Classes --- */
 .gray-bg {
-  background: var(--darkGray);
+  background: var(--lightestGray);
 }
 
 .black-bg {

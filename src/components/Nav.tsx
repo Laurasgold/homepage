@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { below } from "../styles"
-import { Button } from "./Button"
+// import { Button } from "./Button"
 
 type LinkType = {
   to: string
