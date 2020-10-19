@@ -11,6 +11,7 @@ export default function MenuPage({ location }) {
       <SEO title="Menu" pathname={location.pathname} />
       <Wrapper>
         <div className="container">
+          <h1>Menu</h1>
           <MenuList>
             {foods.map(food => (
               <li className="food-category" key={food.title}>
