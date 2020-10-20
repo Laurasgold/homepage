@@ -9,7 +9,7 @@ export default function AboutPage({ location }) {
       <SEO title="About" pathname={location.pathname} />
       <Wrapper>
         <div className="container">
-          <h1>about</h1>
+          <h1>Coming soon..</h1>
         </div>
       </Wrapper>
     </Layout>

@@ -111,7 +111,7 @@ export default function ContactPage({ location, data }) {
               </form>
             </div>
             <div>
-              <h2 className="black-text">Let's connect</h2>
+              <h2 className="black-text">Let's Connect</h2>
               <Social>
                 <ul>
                   {socialLinks.map(({ href, icon }) => (
