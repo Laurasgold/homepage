@@ -7,23 +7,14 @@ type Item = {
   price: string
 }
 
-type Food = {
+type MenuItem = {
   title: string
   titleKr?: string
   note?: string
-  items: Item[]
+  items?: Item[]
 }
 
-type Beverage = {
-  title: string
-  titleKr?: string
-  id?: string
-  name: string
-  nameKr?: string
-  price: string
-}
-
-export const foods: Food[] = [
+export const foods: MenuItem[] = [
   {
     title: "Appetizer",
     titleKr: "",
@@ -311,15 +302,288 @@ export const foods: Food[] = [
       },
     ],
   },
+  {
+    title: "Tofu Hot pot",
+    titleKr: "전골",
+    note: "Rice is served in stone pot individually",
+    items: [
+      {
+        id: "THP1",
+        name: "Soft Tofu Dumpling Hot Pot",
+        nameKr: "순두부 만두 전골",
+        description: "House Made Tofu + Dumplings + Assorted Veggies + Kimchi",
+        descriptionKr: "",
+        price: "27.90",
+      },
+      {
+        id: "THP2",
+        name: "Soft Tofu intestine Hot Pot",
+        nameKr: "순두부 내장 전골",
+        description:
+          "House Made Soft Tofu + Mushroom Medley + Assorted Veggies + Assorted intestine",
+        descriptionKr: "",
+        price: "32.90",
+      },
+      {
+        id: "THP3",
+        name: "Soft Tofu Champong Hot Pot",
+        nameKr: "순두부 짬뽕 전골",
+        description:
+          "House Made Soft Tofu + Mushroom Medley + Assorted Veggies + Shrimp + Calimari + Clam + Muscle + Special Spicy Broth",
+        descriptionKr: "",
+        price: "34.90",
+      },
+      {
+        id: "THP4",
+        name: "Soft Tofu Seafood Hot Pot",
+        nameKr: "순두부 해물전골 ",
+        description:
+          "Soft Tofu + Seafood Medley (Octopus + Shrimp + Abalone + Clams + squid and more)",
+        descriptionKr: "",
+        price: "39.90",
+      },
+    ],
+  },
+  {
+    title: "Noodles",
+    titleKr: "국수",
+    note: "",
+    items: [
+      {
+        id: "ND1",
+        name: "Cold Soy Bean Noodles",
+        nameKr: "냉콩국수",
+        description: "House Made Tofu + Dumplings + Assorted Veggies + Kimchi",
+        descriptionKr: "",
+        price: "12.90",
+      },
+      {
+        id: "ND2",
+        name: "Soft Tofu Seafood Spicy Noodles",
+        nameKr: "순두부 해물 칼국수",
+        description: "",
+        descriptionKr: "",
+        price: "14.50",
+      },
+    ],
+  },
+  {
+    title: "Bossam",
+    titleKr: "Steamed Pork Dish for 2-3",
+    note: "",
+    items: [
+      {
+        id: "",
+        name: "Bossam",
+        nameKr: "",
+        description:
+          "Steamed/Sliced Pork Belly + Sliced Garlic + Assorted Veggie Wrap + Jalapeno + Shrimp Sauce",
+        descriptionKr: "",
+        price: "29.50",
+      },
+      {
+        id: "",
+        name: "Pyun-yook",
+        nameKr: "",
+        description:
+          "Steamed Beef head + Sliced Garlic + Assorted Veggie Wrap + Jalapeno + Shrimp Sauce",
+        descriptionKr: "",
+        price: "27.50",
+      },
+    ],
+  },
+  {
+    title: "Vegetarian",
+    titleKr: "No Fish or Meat",
+    note: "",
+    items: [
+      {
+        id: "VT1",
+        name: "Fresh Soft Tofu Salad",
+        nameKr: "순두부 샐러드",
+        description:
+          "Fresh mixed Greens topped with Fresh house-made tofu and homemade soy salad dressing",
+        descriptionKr: "",
+        price: "11.50",
+      },
+      {
+        id: "VT2",
+        name: "Grilled Tofu Salad",
+        nameKr: "두부 구이 샐러드",
+        description:
+          "Fresh Mixed greens topped with Deep-fried tofu and homemade soy salad dressing",
+        descriptionKr: "",
+        price: "11.50",
+      },
+      {
+        id: "VT3",
+        name: "Fresh Soft-Tofu",
+        nameKr: "초두부",
+        description:
+          "Fresh-House Made Tofu to be enjoyed fresh with our special soy sauce dressing.",
+        descriptionKr: "",
+        price: "11.90",
+      },
+      {
+        id: "VT4",
+        name: "Kimchi Soft Tofu Soup",
+        nameKr: "김치 순두부",
+        description: "House-Made Soft Tofu, Veggies and Kimchi",
+        descriptionKr: "",
+        price: "12.50",
+      },
+      {
+        id: "VT5",
+        name: "Seaweed Soft Tofu Soup",
+        nameKr: "해초 순두부",
+        description:
+          "Assorted Seaweed, House-Made Soft Tofu, Assorted Veggies and Kimchi",
+        descriptionKr: "",
+        price: "12.50",
+      },
+      {
+        id: "VT6",
+        name: "Vegetable Soft Tofu Soup",
+        nameKr: "야채 순두부",
+        description: "Mixed Vegetables, House-Made Soft Tofu and Kimchi",
+        descriptionKr: "",
+        price: "11.90",
+      },
+      {
+        id: "VT7",
+        name: "Kimchi Hot Stone Bibimbap",
+        nameKr: "김치 비빔밥",
+        description: "Kimchi, veggies and healthy gochujang sauce",
+        descriptionKr: "",
+        price: "14.90",
+      },
+      {
+        id: "VT8",
+        name: "Seaweed Hot Stone Bibimbap",
+        nameKr: "해초 비빔밥",
+        description: "Seaweeds and healthy gochujang sauce",
+        descriptionKr: "",
+        price: "14.90",
+      },
+      {
+        id: "VT9",
+        name: "Tofu Hot Stone Bibimbap",
+        nameKr: "순두부 비빔밥",
+        description: "Tofu, Assorted Veggies and Gochujang sauce",
+        descriptionKr: "",
+        price: "14.90",
+      },
+    ],
+  },
 ]
 
-export const beverageandDeserts: Beverage[] = [
+export const beverageandDeserts: MenuItem[] = [
   {
-    title: "",
+    title: "A. Traditional Korean Drink",
     titleKr: "",
-    id: "",
-    name: "",
-    nameKr: "",
-    price: "",
+    items: [
+      {
+        id: "HT1",
+        name: "Soy Milk/Pomegranate Tea",
+        nameKr: "",
+        price: "4.50",
+      },
+      {
+        id: "DT2",
+        name: "Soy Milk/Green Tea",
+        nameKr: "",
+        price: "4.50",
+      },
+      {
+        id: "HT3",
+        name: "Soy Milk/Plum Tea",
+        nameKr: "",
+        price: "4.50",
+      },
+      {
+        id: "DT4",
+        name: "Soy Milk/Strawberry",
+        nameKr: "",
+        price: "4.50",
+      },
+      {
+        id: "HT5",
+        name: "Soy Milk/Jujube Tea",
+        nameKr: "",
+        price: "4.50",
+      },
+      {
+        id: "DT6",
+        name: "Soy Milk/Raw Honey Tea",
+        nameKr: "",
+        price: "4.90",
+      },
+    ],
+  },
+  {
+    title: "B. Coke Products - $1.75",
+    titleKr: "",
+    // items: [
+    //   {
+    //     id: "",
+    //     name: "",
+    //     nameKr: "",
+    //     price: "",
+    //   },
+    // ],
+  },
+  {
+    title: "C. Liquor",
+    titleKr: "",
+    items: [
+      {
+        id: "",
+        name: "Soju",
+        nameKr: "소주",
+        price: "10.90",
+      },
+      {
+        id: "",
+        name: "Bakseju",
+        nameKr: "백세주",
+        price: "11.95",
+      },
+      {
+        id: "",
+        name: "Beer",
+        nameKr: "맥주",
+        price: "6.90",
+      },
+      {
+        id: "",
+        name: "Rice-Wine",
+        nameKr: "막걸리",
+        price: "9.90",
+      },
+    ],
+  },
+  {
+    title: "D. Dessert",
+    titleKr: "",
+    items: [
+      {
+        id: "",
+        name: "Soft Tofu Frozen Yogurt",
+        nameKr: "",
+        price: "3.50",
+      },
+      {
+        id: "",
+        name: "Soy Milk Snowflake Bingsoo",
+        nameKr: "",
+        price: "1.50",
+      },
+      {
+        id: "",
+        name: "Additional Toppings (Strawberry/Mango/Blueberry)",
+        nameKr: "",
+        price: "9.90",
+      },
+    ],
   },
 ]
