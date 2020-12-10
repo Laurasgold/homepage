@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
 import { Wrapper } from "../styles"
 import { beverageandDeserts, foods } from "../data/menu"
 
-export default function MenuPage({ location }) {
+export default function MenuPage({ location, data }) {
   return (
     <Layout location={location}>
       <SEO title="Menu" pathname={location.pathname} />
@@ -37,6 +39,8 @@ export default function MenuPage({ location }) {
                 </ul>
               </li>
             ))}
+            <Img fluid={data.dorsolBibimbap.childImageSharp.fluid} alt="" />
+
             <h3 className="food-title">{foods.length + 1}. Beverages</h3>
             {beverageandDeserts.map(food => (
               <li className="food-category" key={food.title}>
@@ -105,6 +109,93 @@ const MenuList = styled.ol`
     .price {
       margin: 1.5rem 0;
       color: var(--black);
+    }
+  }
+`
+
+export const query = graphql`
+  query {
+    heroImg: file(relativePath: { eq: "soup.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1440, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    # Menu items
+    bibimbap: file(relativePath: { eq: "menu/bibimbap.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    cheodangSundubu: file(relativePath: { eq: "menu/cheodang-sundubu.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    dorsolBibimbap: file(relativePath: { eq: "menu/dorsol-bibimbap.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    dubuSalad: file(relativePath: { eq: "menu/dubu-salad.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    dwenjangSundubu: file(relativePath: { eq: "menu/dwenjang-sundubu.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    gopjangSundubu: file(relativePath: { eq: "menu/gopjang-sundubu.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    manduSundubu: file(relativePath: { eq: "menu/mandu-sundubu.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nengkongKarlgugsu: file(
+      relativePath: { eq: "menu/nengkong-kargugsu.jpg" }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    seafoodSundubu: file(
+      relativePath: { eq: "menu/seafood-sundubu-jungle.jpg" }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sundubu: file(relativePath: { eq: "menu/sundubu.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
     }
   }
 `

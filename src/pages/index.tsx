@@ -6,7 +6,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Button } from "../components/Button"
-import { Wrapper, Grid, Card } from "../styles"
+import { Wrapper, Grid } from "../styles"
 
 const IndexPage = ({ data, location }) => {
   const images = [
@@ -80,55 +80,55 @@ const IndexPage = ({ data, location }) => {
         </Wrapper>
       </HeroBackgroundImg>
       <Wrapper>
-        {/* <Grid cols={[1, 1, 2]} className="container">
-        <div className="margins">
-          <h2 className="no-top-margin">What is Tofu?</h2>
-          <p>
-            Tofu is a protein made much in the same way cheese is made from milk
-            — by condensing milk made from soybeans. The texture depends on how
-            much water and natural coagulants are used. You can use tofu to
-            replace meat, dairy, and eggs. Tofu will absorb the flavor of your
-            other ingredients — whether they’re sweet, savory, or spicy — and
-            has very little flavor on its own. Best of all, tofu is good for
-            you. It’s packed with protein, and it is dairy free, gluten free,
-            cholesterol free, and vegan!
-          </p>
-        </div>
-        <div className="margins">
-          <iframe
-            width="547"
-            height="328"
-            src="https://www.youtube.com/embed/RhEB1sjSSf8"
-            frameborder="0"
-            style={{ margin: "0 auto" }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </Grid>
-      <Grid cols={[1, 1, 3]} className="center-text bottom-padding">
-        <div>
-          <h2 className="orange-text">Traditional</h2>
-          <p className="large">
-            Our tofu house prides itself in preserving the art of tofu making
-            that dates back thousands of years.
-          </p>
-        </div>
-        <div>
-          <h2 className="orange-text">Healthy</h2>
-          <p className="large">
-            A satisfying and nutritious plant based protein for all types of
-            diets.
-          </p>
-        </div>
-        <div>
-          <h2 className="orange-text">Handmade</h2>
-          <p className="large">
-            Handmade tofu made same day. Fresh tofu made using traditional
-            Korean methods for over 100 years.
-          </p>
-        </div>
-      </Grid> */}
+        <Grid cols={[1, 1, 2]} className="container">
+          <div className="margins">
+            <h2 className="no-top-margin">What is Tofu?</h2>
+            <p>
+              Tofu is a protein made much in the same way cheese is made from
+              milk — by condensing milk made from soybeans. The texture depends
+              on how much water and natural coagulants are used. You can use
+              tofu to replace meat, dairy, and eggs. Tofu will absorb the flavor
+              of your other ingredients — whether they’re sweet, savory, or
+              spicy — and has very little flavor on its own. Best of all, tofu
+              is good for you. It’s packed with protein, and it is dairy free,
+              gluten free, cholesterol free, and vegan!
+            </p>
+          </div>
+          <div className="margins">
+            <iframe
+              width="547"
+              height="328"
+              src="https://www.youtube.com/embed/RhEB1sjSSf8"
+              frameborder="0"
+              style={{ margin: "0 auto" }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </Grid>
+        <Grid cols={[1, 1, 3]} className="center-text bottom-padding">
+          <div>
+            <h2 className="orange-text">Traditional</h2>
+            <p className="large">
+              Our tofu house prides itself in preserving the art of tofu making
+              that dates back thousands of years.
+            </p>
+          </div>
+          <div>
+            <h2 className="orange-text">Healthy</h2>
+            <p className="large">
+              A satisfying and nutritious plant based protein for all types of
+              diets.
+            </p>
+          </div>
+          <div>
+            <h2 className="orange-text">Handmade</h2>
+            <p className="large">
+              Handmade tofu made same day. Fresh tofu made using traditional
+              Korean methods for over 100 years.
+            </p>
+          </div>
+        </Grid>
         <div className="margins">
           <Grid cols={[1, 1, 2]} className="container">
             {images.map(image => (
