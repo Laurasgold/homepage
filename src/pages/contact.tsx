@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -30,9 +30,13 @@ function encode(data) {
 }
 
 export default function ContactPage({ location, data }) {
-  const [state, setState] = React.useState({})
+  const [state, setState] = useState({})
+  const [error, setError] = useState("")
 
   const handleChange = e => {
+    if (error) {
+      setError("")
+    }
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
@@ -47,8 +51,14 @@ export default function ContactPage({ location, data }) {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error))
+      .then(result => {
+        console.log("result", result)
+        navigate(form.getAttribute("action"))
+      })
+      .catch(e => {
+        console.log("e", e)
+        setError("Form could not be submitted. Please try again later.")
+      })
   }
   return (
     <Layout location={location}>
@@ -57,6 +67,7 @@ export default function ContactPage({ location, data }) {
         <div className="container">
           <Cols css="grid-gap: 6rem;">
             <div className="mobile-reverse-item ">
+              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>
@@ -104,7 +115,7 @@ export default function ContactPage({ location, data }) {
                     onChange={handleChange}
                   ></textarea>
                 </label>
-
+                {error && <p className="red-text small">{error}</p>}
                 <Button type="submit" color="orange">
                   Send
                 </Button>
