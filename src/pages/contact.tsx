@@ -8,20 +8,20 @@ import { Wrapper, Cols } from "../styles"
 import { Button } from "../components/Button"
 import Icon from "../components/Icon"
 
-const socialLinks = [
-  {
-    href: "",
-    icon: "facebook",
-  },
-  {
-    href: "",
-    icon: "instagram",
-  },
-  {
-    href: "",
-    icon: "twitter",
-  },
-]
+// const socialLinks = [
+//   {
+//     href: "",
+//     icon: "facebook",
+//   },
+//   {
+//     href: "",
+//     icon: "instagram",
+//   },
+//   {
+//     href: "",
+//     icon: "twitter",
+//   },
+// ]
 
 function encode(data) {
   return Object.keys(data)
@@ -56,7 +56,7 @@ export default function ContactPage({ location, data }) {
       <Wrapper>
         <div className="container">
           <Cols css="grid-gap: 6rem;">
-            <div>
+            <div className="mobile-reverse-item ">
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>
@@ -112,7 +112,7 @@ export default function ContactPage({ location, data }) {
             </div>
             <div>
               <h2 className="black-text">Let's Connect</h2>
-              <Social>
+              {/* <Social>
                 <ul>
                   {socialLinks.map(({ href, icon }) => (
                     <li key={href}>
@@ -122,23 +122,32 @@ export default function ContactPage({ location, data }) {
                     </li>
                   ))}
                 </ul>
-              </Social>
+              </Social> */}
               <div>
-                {/* <div
+                <div
                   style={{
                     margin: "2rem 1rem",
                     display: "flex",
                     alignItems: "center",
                   }}
-                > */}
-                {/* <Icon name="phone" /> */}
-                <p
-                // style={{ margin: "0 0 0 2rem" }}
                 >
-                  (555)-555-5555
-                </p>
-                {/* </div> */}
-                <p>ADDRESS HERE</p>
+                  <Icon name="phone" />
+                  <p style={{ margin: "0 0 0 2rem" }}>(480) 361-0523</p>
+                </div>
+                <div
+                  style={{
+                    margin: "2rem 1rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <Icon name="gps" />
+                  <p style={{ margin: "0 0 0 2rem" }}>
+                    1870 W. Main St.
+                    <br />
+                    Mesa, AZ 85202
+                  </p>
+                </div>
               </div>
             </div>
           </Cols>

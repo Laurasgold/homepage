@@ -28,9 +28,16 @@ const MobileNav = ({ links, closeMenu }: Props) => (
           </Link>
         </li>
       ))}
-      {/* <li>
-        <Button size="small">Order Now</Button>
-      </li> */}
+      <li>
+        <Button
+          size="small"
+          as="a"
+          target="_blank"
+          href="http://order.pbsus.com/stoneaz"
+        >
+          Order Now
+        </Button>
+      </li>
     </ul>
   </NavBar>
 )

@@ -24,7 +24,15 @@ const Nav = ({ links }: Props) => (
         </li>
       ))}
       <li>
-        <Button size="small">Order Now</Button>
+        <Button
+          className="button"
+          size="small"
+          as="a"
+          target="_blank"
+          href="http://order.pbsus.com/stoneaz"
+        >
+          Order Now
+        </Button>
       </li>
     </ul>
   </NavBar>
@@ -42,6 +50,9 @@ const NavBar = styled.nav`
       color: var(--white);
       &:hover {
         color: var(--red);
+      }
+      &.button:hover {
+        color: var(--white);
       }
     }
   }

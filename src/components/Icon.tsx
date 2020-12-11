@@ -62,6 +62,21 @@ const Icon = ({ color = "var(--black)", name, onClick, style = {} }: Props) => {
           />
         </svg>
       )
+    case "gps":
+      return (
+        <svg
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          onClick={onClick}
+          height="25"
+          width="25"
+          className="icon"
+        >
+          <title>GPS</title>
+          <path d="M511.725 930C447.45 930 192 640.5 192 417S335.269 97 512 97s320 96.5 320 320-256 513-320.275 513zM512 570c88.366 0 160-71.634 160-160s-71.634-160-160-160-160 71.634-160 160 71.634 160 160 160z" />
+        </svg>
+      )
     case "phone":
       return (
         <svg

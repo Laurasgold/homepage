@@ -129,7 +129,7 @@ const IndexPage = ({ data, location }) => {
             </p>
           </div>
         </Grid>
-        <div className="margins">
+        <div>
           <Grid cols={[1, 1, 2]} className="container">
             {images.map(image => (
               <Img fluid={image.fluid} alt={image.alt} />

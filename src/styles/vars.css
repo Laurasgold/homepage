@@ -70,7 +70,7 @@
   --heading-five: var(--largeFontSize);
   --heading-six: var(--baseFontSize);
 
-  --headingFont: "Roboto", arial, sans-serif;
+  --headingFont: "Poppins", "Helvetica", arial, sans-serif;
   --bodyFont: var(--headingFont);
 }
 

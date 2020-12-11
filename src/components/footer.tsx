@@ -50,6 +50,13 @@ export default function Footer() {
             </ul>
           </nav>
           <img src={logo} alt="The Stone logo" className="logo" />
+          <div className="address">
+            <p>
+              1870 W. Main St.
+              <br />
+              Mesa, AZ 85202
+            </p>
+          </div>
           <div className="social">
             <ul>
               {socialLinks.map(({ href, icon }) => (

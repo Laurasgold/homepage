@@ -23,6 +23,13 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     "gatsby-plugin-robots-txt",
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Poppins\:400,400i,500,100`],
+        display: "swap",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
