@@ -617,7 +617,7 @@ export default function MenuPage({ location, data }) {
     },
     {
       image: "",
-      title: "C. Liquor",
+      title: "Liquor",
       titleKr: "",
       items: [
         {
