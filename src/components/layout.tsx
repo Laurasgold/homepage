@@ -8,11 +8,12 @@ import "../styles/global.css"
 import "../styles/classes.css"
 
 const Layout = ({ children, location }) => {
+  const isQrMenu = location.pathname.startsWith("/qr")
   return (
     <>
-      <Header />
+      {!isQrMenu && <Header />}
       <main>{children}</main>
-      <Footer />
+      {!isQrMenu && <Footer />}
     </>
   )
 }
