@@ -568,7 +568,7 @@ export default function MenuPage({ location, data }) {
     // },
     {
       image: "",
-      title: "Pepsi Products - $1.75",
+      title: "Pepsi Products - $2.50",
       titleKr: "",
       items: [
         {
@@ -628,7 +628,7 @@ export default function MenuPage({ location, data }) {
         },
         // {
         //   id: "",
-        //   name: "Bakseju",
+        //   name: "Baekseju",
         //   nameKr: "백세주",
         //   price: "11.95",
         // },
