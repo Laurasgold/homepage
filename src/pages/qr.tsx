@@ -116,10 +116,10 @@ export default function MenuPage({ location, data }) {
         },
         {
           id: "TS3",
-          name: "Beef(Brisket) Soft Tofu Soup",
+          name: "Beef Soft Tofu Soup",
           nameKr: "소고기 순두부",
           description:
-            "Premium brisket, house made soft tofu, assorted vegetables, and kimchi",
+            "Premium beef, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.90",
         },
