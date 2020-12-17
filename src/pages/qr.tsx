@@ -700,9 +700,7 @@ export default function MenuPage({ location, data }) {
                           {item.id && item.id + "."}{" "}
                           {item.nameKr && item.nameKr + ":"} {item.name}
                         </h5>
-                        <p style={{ color: "var(--lightGray" }}>
-                          {item.description}
-                        </p>
+                        <p>{item.description}</p>
                       </div>
                       <h5 className="price">${item.price}</h5>
                     </li>
@@ -764,6 +762,7 @@ const MenuList = styled.ol`
     justify-content: space-between;
     margin-bottom: 0;
     .food-name {
+      color: var(--black);
       margin-bottom: 0.5rem;
     }
     .price {
@@ -779,6 +778,7 @@ const MenuList = styled.ol`
     }
   }
   .beverage-title {
+    color: var(--black);
     margin: 4rem 1rem 1rem 0;
   }
   .beverage-item {
