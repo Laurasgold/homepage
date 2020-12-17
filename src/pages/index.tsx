@@ -79,6 +79,9 @@ const IndexPage = ({ data, location }) => {
           </Grid>
         </Wrapper>
       </HeroBackgroundImg>
+      <div className="center-text white-text orange-bg padding">
+        <h3 className="no-margins">Online Ordering Coming Soon!</h3>
+      </div>
       <Wrapper>
         <Grid cols={[1, 1, 2]} className="container">
           <div className="margins">

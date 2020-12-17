@@ -11,6 +11,10 @@
   background: var(--black);
 }
 
+.orange-bg {
+  background: var(--orange);
+}
+
 .white-text {
   color: var(--white);
 }

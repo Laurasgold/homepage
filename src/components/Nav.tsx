@@ -23,7 +23,7 @@ const Nav = ({ links }: Props) => (
           </Link>
         </li>
       ))}
-      <li>
+      {/* <li>
         <Button
           className="button"
           size="small"
@@ -33,7 +33,7 @@ const Nav = ({ links }: Props) => (
         >
           Order Now
         </Button>
-      </li>
+      </li> */}
     </ul>
   </NavBar>
 )
