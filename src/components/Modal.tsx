@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import styled from 'styled-components'
-import Portal from './Portal'
-import { useScrollFreeze } from '../hooks'
-import Icon from './Icon'
+import React, { ReactNode } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import styled from "styled-components"
+import Portal from "./Portal"
+import { useScrollFreeze } from "../hooks"
+import Icon from "./Icon"
 
 interface ModalAnimationProps {
   isActive: boolean
@@ -55,12 +55,12 @@ const Modal = ({
             {closeAction && (
               <CloseButton onClick={closeAction}>
                 <Icon
-                  name="remove"
+                  name="close"
                   color="var(--lightGray)"
                   style={{
-                    width: '36px',
-                    height: '36px',
-                    marginBottom: 'var(--halfMargin)',
+                    width: "36px",
+                    height: "36px",
+                    marginBottom: "var(--halfMargin)",
                   }}
                 />
               </CloseButton>
@@ -118,7 +118,13 @@ const CloseButton = styled.button`
 `
 
 const Background = styled.div`
-  background-color: rgba(0, 40, 58, 0.85);
+  background: rgb(236, 28, 36);
+  background: linear-gradient(
+    151deg,
+    rgba(236, 28, 36, 0.85) 0%,
+    rgba(88, 8, 13, 0.85) 28%,
+    rgba(2, 11, 14, 0.85) 55%
+  );
   position: fixed;
   top: 0;
   left: 0;

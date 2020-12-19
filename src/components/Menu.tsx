@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
+import Modal from "./Modal"
+import Icon from "./Icon"
 
 type Item = {
   id?: string
@@ -10,6 +12,7 @@ type Item = {
   description?: string
   descriptionKr?: string
   price: string
+  image?: string
 }
 
 type MenuItem = {
@@ -187,6 +190,7 @@ export function Menu() {
             "Dumplings, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.50",
+          image: manduSundubu.childImageSharp.fluid,
         },
         {
           id: "TS2",
@@ -196,6 +200,7 @@ export function Menu() {
             "Korean miso broth, house made soft tofu, and assorted vegetables",
           descriptionKr: "",
           price: "12.50",
+          image: dwenjangSundubu.childImageSharp.fluid,
         },
         {
           id: "TS3",
@@ -205,6 +210,7 @@ export function Menu() {
             "Premium beef, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.90",
+          image: "",
         },
         {
           id: "TS4",
@@ -214,6 +220,7 @@ export function Menu() {
             "Oyster, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.90",
+          image: "",
         },
         {
           id: "TS5",
@@ -223,6 +230,7 @@ export function Menu() {
             "Intestine, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.90",
+          image: gopjangSundubu.childImageSharp.fluid,
         },
         {
           id: "TS6",
@@ -232,6 +240,7 @@ export function Menu() {
             "Seaweed, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.50",
+          image: "",
         },
         {
           id: "TS7",
@@ -241,6 +250,7 @@ export function Menu() {
             "Seafood medley (clam, mussell, shrimp, calimari, scallops), house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.90",
+          image: "",
         },
         {
           id: "TS8",
@@ -250,6 +260,7 @@ export function Menu() {
             "Pork, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.50",
+          image: "",
         },
         {
           id: "TS9",
@@ -259,6 +270,7 @@ export function Menu() {
             "Fresh house made soft tofu and soy bean sauce (not spicy)",
           descriptionKr: "",
           price: "11.50",
+          image: cheodangSundubu.childImageSharp.fluid,
         },
       ],
     },
@@ -757,60 +769,80 @@ export function Menu() {
     // },
   ]
 
-  return (
-    <MenuList>
-      {foods.map((food, i) => (
-        <li className="food-category" key={food.title}>
-          {food.image && (
-            <Img
-              fluid={food.image}
-              alt={food.title}
-              style={{ marginTop: "var(--baseMargin)" }}
-            />
-          )}
-          <h3 className="food-title">
-            {i + 1}. {food.title} {food.titleKr && `(${food.titleKr})`}
-          </h3>
-          {food.note && <p className="note">*{food.note}</p>}
-          <ul>
-            {food.items.map(item => (
-              <li key={item.id} className="food-item">
-                <div>
-                  <h5 className="food-name">
-                    {item.id && item.id + "."}{" "}
-                    {item.nameKr && item.nameKr + ":"} {item.name}
-                  </h5>
-                  <p>{item.description}</p>
-                </div>
-                <h5 className="price">${item.price}</h5>
-              </li>
-            ))}
-          </ul>
-        </li>
-      ))}
+  const [modalImage, setModalImage] = useState("")
 
-      <h3 className="food-title">{foods.length + 1}. Beverages</h3>
-      {beverageandDeserts.map(food => (
-        <li className="food-category" key={food.title}>
-          <h5 className="beverage-title">
-            {food.title} {food.titleKr && `(${food.titleKr})`}
-          </h5>
-          {food.items && (
+  return (
+    <>
+      <MenuList>
+        {foods.map((food, i) => (
+          <li className="food-category" key={food.title}>
+            {food.image && (
+              <Img
+                fluid={food.image}
+                alt={food.title}
+                style={{ marginTop: "var(--baseMargin)" }}
+              />
+            )}
+            <h3 className="food-title">
+              {i + 1}. {food.title} {food.titleKr && `(${food.titleKr})`}
+            </h3>
+            {food.note && <p className="note">*{food.note}</p>}
             <ul>
               {food.items.map(item => (
-                <li key={item.id} className="beverage-item">
-                  <p className="beverage-name">
-                    {item.id && item.id + "."}{" "}
-                    {item.nameKr && item.nameKr + ":"} {item.name}
-                  </p>
-                  {item.price && <h5 className="price">${item.price}</h5>}
+                <li key={item.id} className="food-item">
+                  <div>
+                    <h5 className="food-name">
+                      {item.id && item.id + "."}{" "}
+                      {item.nameKr && item.nameKr + ":"} {item.name}{" "}
+                      {item.image && (
+                        <Icon
+                          name="image"
+                          onClick={
+                            item.image ? () => setModalImage(item.image) : null
+                          }
+                          color="var(--red)"
+                          style={{
+                            margin: "0 0 -2px var(--halfMargin)",
+                            cursor: "pointer",
+                          }}
+                        />
+                      )}
+                    </h5>
+                    <p>{item.description}</p>
+                  </div>
+                  <h5 className="price">${item.price}</h5>
                 </li>
               ))}
             </ul>
-          )}
-        </li>
-      ))}
-    </MenuList>
+          </li>
+        ))}
+
+        <h3 className="food-title">{foods.length + 1}. Beverages</h3>
+        {beverageandDeserts.map(food => (
+          <li className="food-category" key={food.title}>
+            <h5 className="beverage-title">
+              {food.title} {food.titleKr && `(${food.titleKr})`}
+            </h5>
+            {food.items && (
+              <ul>
+                {food.items.map(item => (
+                  <li key={item.id} className="beverage-item">
+                    <p className="beverage-name">
+                      {item.id && item.id + "."}{" "}
+                      {item.nameKr && item.nameKr + ":"} {item.name}
+                    </p>
+                    {item.price && <h5 className="price">${item.price}</h5>}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </MenuList>
+      <Modal isActive={!!modalImage} closeAction={() => setModalImage("")}>
+        {modalImage && <Img fluid={modalImage} />}
+      </Modal>
+    </>
   )
 }
 
