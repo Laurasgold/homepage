@@ -313,7 +313,7 @@ export function Menu() {
       note: "Comes with a serving of rice",
       items: [
         {
-          id: "TC1",
+          id: "C1",
           name: "Marinated Back-Ribs Combo",
           nameKr: "돼지갈비콤보",
           description: "Marinated back ribs + Soft tofu soup",
@@ -321,7 +321,7 @@ export function Menu() {
           price: "19.50",
         },
         {
-          id: "TC2",
+          id: "C2",
           name: "LA Style Ribs Combo",
           nameKr: "LA 갈비 콤보",
           description: "LA style ribs + Soft tofu soup",
@@ -329,7 +329,7 @@ export function Menu() {
           price: "19.50",
         },
         {
-          id: "TC3",
+          id: "C3",
           name: "Marinated Crab Combo",
           nameKr: "양념게장 콤보",
           description: "Marinated crab + Soft tofu soup",
@@ -337,7 +337,7 @@ export function Menu() {
           price: "19.50",
         },
         {
-          id: "TC4",
+          id: "C4",
           name: "Spicy Korean Chicken Combo",
           nameKr: "닭갈비 콤보",
           description: "Spicy korean chicken + Soft tofu soup",
@@ -345,7 +345,7 @@ export function Menu() {
           price: "19.50",
         },
         {
-          id: "TC6",
+          id: "C6",
           name: "Beef Combo",
           nameKr: "소불고기 콤보",
           description: "Korean BBQ style beef bulgogi + Soft tofu soup",
@@ -353,7 +353,7 @@ export function Menu() {
           price: "19.50",
         },
         {
-          id: "TC7",
+          id: "C7",
           name: "Yellow Pollack Combo",
           nameKr: "황태구이 콤보",
           description: "Grilled yellow pollack + Soft tofu soup",
@@ -369,7 +369,7 @@ export function Menu() {
         //   price: "19.50",
         // },
         {
-          id: "TC9",
+          id: "C9",
           name: "Spicy Pork Combo",
           nameKr: "돼지불고기 콤보 ",
           description: " Korean BBQ style spicy pork + Soft tofu soup",
