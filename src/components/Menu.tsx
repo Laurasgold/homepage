@@ -376,14 +376,14 @@ export function Menu() {
           descriptionKr: "",
           price: "19.50",
         },
-        // {
-        //   id: "TC10",
-        //   name: "Grilled Fish Combo",
-        //   nameKr: "생선구어 콤보",
-        //   description: " Grilled fish + Soft tofu soup",
-        //   descriptionKr: "",
-        //   price: "19.50",
-        // },
+        {
+          id: "TC10",
+          name: "Grilled Fish Combo",
+          nameKr: "생선구어 콤보",
+          description: " Grilled fish + Soft tofu soup",
+          descriptionKr: "",
+          price: "19.50",
+        },
       ],
     },
     // {

@@ -51,6 +51,7 @@ export default function Footer() {
           </nav>
           <img src={logo} alt="The Stone logo" className="logo" />
           <div className="address">
+            {/* <p>(480) 361-0523</p> */}
             <p>
               1870 W. Main St.
               <br />
