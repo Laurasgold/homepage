@@ -197,7 +197,7 @@ export function Menu() {
           name: "Korean Miso Soft Tofu Soup",
           nameKr: "된장 순두부",
           description:
-            "Korean miso broth, house made soft tofu, and assorted vegetables",
+            "Korean miso broth, house made soft tofu, assorted vegetables, mussles, and clams",
           descriptionKr: "",
           price: "12.50",
           image: dwenjangSundubu.childImageSharp.fluid,
