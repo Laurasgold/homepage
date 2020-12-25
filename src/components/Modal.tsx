@@ -56,7 +56,7 @@ const Modal = ({
               <CloseButton onClick={closeAction}>
                 <Icon
                   name="close"
-                  color="var(--lightGray)"
+                  color="var(--white)"
                   style={{
                     width: "36px",
                     height: "36px",
@@ -96,13 +96,9 @@ const ModalWrapper = styled.div`
 `
 
 const ModalContent = styled.div`
-  --modalPadding: calc(var(--basePadding) / 2);
-  padding: var(--modalPadding);
-  border-radius: var(--cardRadius);
-  background: var(--white);
   box-shadow: var(--elevation-5);
   > div {
-    padding: 0 var(--modalPadding) var(--modalPadding) var(--modalPadding);
+    padding: 0;
     > *:first-child {
       margin-top: 0;
     }
@@ -118,13 +114,7 @@ const CloseButton = styled.button`
 `
 
 const Background = styled.div`
-  background: rgb(236, 28, 36);
-  background: linear-gradient(
-    151deg,
-    rgba(236, 28, 36, 0.85) 0%,
-    rgba(88, 8, 13, 0.85) 28%,
-    rgba(2, 11, 14, 0.85) 55%
-  );
+  background: rgba(2, 11, 14, 0.85);
   position: fixed;
   top: 0;
   left: 0;
