@@ -22,17 +22,18 @@ const links = [
 
 const socialLinks = [
   {
-    href: "",
+    href:
+      "https://www.facebook.com/The-Stone-Korean-Tofu-House-AZ-103268708350179/",
     icon: "facebook",
   },
   {
-    href: "",
+    href: "https://instagram.com/stonetofuhouseaz?igshid=1mt2u4mvnarzw",
     icon: "instagram",
   },
-  {
-    href: "",
-    icon: "twitter",
-  },
+  // {
+  //   href: "",
+  //   icon: "twitter",
+  // },
 ]
 
 export default function Footer() {
@@ -40,7 +41,7 @@ export default function Footer() {
     <FooterWrapper className="center-text black-bg white-text">
       <Wrapper>
         <div className="top-padding">
-          <nav>
+          {/* <nav>
             <ul>
               {links.map(({ to, text }) => (
                 <li key={to}>
@@ -48,10 +49,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </nav>
-          <img src={logo} alt="The Stone logo" className="logo" />
+          </nav> */}
+          {/* <img src={logo} alt="The Stone logo" className="logo" /> */}
           <div className="address">
-            {/* <p>(480) 361-0523</p> */}
+            <p>(480) 361-0523</p>
             <p>
               1870 W. Main St.
               <br />
@@ -107,7 +108,7 @@ const FooterWrapper = styled.footer`
   }
   .social {
     li {
-      flex: 1;
+      /* flex: 1; */
       svg {
         width: 3rem;
         height: 3rem;

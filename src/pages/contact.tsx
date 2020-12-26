@@ -8,20 +8,21 @@ import { Wrapper, Cols } from "../styles"
 import { Button } from "../components/Button"
 import Icon from "../components/Icon"
 
-// const socialLinks = [
-//   {
-//     href: "",
-//     icon: "facebook",
-//   },
-//   {
-//     href: "",
-//     icon: "instagram",
-//   },
-//   {
-//     href: "",
-//     icon: "twitter",
-//   },
-// ]
+const socialLinks = [
+  {
+    href:
+      "https://www.facebook.com/The-Stone-Korean-Tofu-House-AZ-103268708350179/",
+    icon: "facebook",
+  },
+  {
+    href: "https://instagram.com/stonetofuhouseaz?igshid=1mt2u4mvnarzw",
+    icon: "instagram",
+  },
+  // {
+  //   href: "",
+  //   icon: "twitter",
+  // },
+]
 
 function encode(data) {
   return Object.keys(data)
@@ -123,7 +124,7 @@ export default function ContactPage({ location, data }) {
             </div>
             <div>
               <h2 className="black-text">Let's Connect</h2>
-              {/* <Social>
+              <Social>
                 <ul>
                   {socialLinks.map(({ href, icon }) => (
                     <li key={href}>
@@ -133,7 +134,7 @@ export default function ContactPage({ location, data }) {
                     </li>
                   ))}
                 </ul>
-              </Social> */}
+              </Social>
               <div>
                 <div
                   style={{
