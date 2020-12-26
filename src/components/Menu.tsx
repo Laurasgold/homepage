@@ -237,7 +237,7 @@ export function Menu() {
           name: "Seaweed Soft Tofu Soup",
           nameKr: " 해초 순두부",
           description:
-            "Seaweed, house made soft tofu, assorted vegetables, and kimchi",
+            "5 different kids of seaweed, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.50",
           image: "",
@@ -247,7 +247,7 @@ export function Menu() {
           name: "Seafood Soft Tofu Soup",
           nameKr: "해물 순두부",
           description:
-            "Seafood medley (clam, mussell, shrimp, calimari, scallops), house made soft tofu, assorted vegetables, and kimchi",
+            "Seafood medley (clam, mussell, shrimp, calimari), house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.90",
           image: "",
@@ -378,9 +378,9 @@ export function Menu() {
         },
         {
           id: "TC10",
-          name: "Grilled Fish Combo",
+          name: "Grilled Intestine Combo",
           nameKr: "생선구어 콤보",
-          description: " Grilled fish + Soft tofu soup",
+          description: " Grilled Intestine + Soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
