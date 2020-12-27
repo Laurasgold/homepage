@@ -376,14 +376,14 @@ export function Menu() {
           descriptionKr: "",
           price: "19.50",
         },
-        {
-          id: "TC10",
-          name: "Grilled Intestine Combo",
-          nameKr: "생선구어 콤보",
-          description: " Grilled Intestine + Soft tofu soup",
-          descriptionKr: "",
-          price: "19.50",
-        },
+        // {
+        //   id: "TC10",
+        //   name: "Grilled Intestine Combo",
+        //   nameKr: "생선구어 콤보",
+        //   description: " Grilled Intestine + Soft tofu soup",
+        //   descriptionKr: "",
+        //   price: "19.50",
+        // },
       ],
     },
     // {
