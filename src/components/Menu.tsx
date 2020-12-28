@@ -124,60 +124,60 @@ export function Menu() {
   `)
 
   const foods: MenuItem[] = [
-    // {
-    //   image: "",
-    //   title: "Appetizer",
-    //   titleKr: "",
-    //   note: "",
-    //   items: [
-    //     {
-    //       id: "E-1",
-    //       name: "Bean Curd Korean Pancake",
-    //       nameKr: "콩비지전",
-    //       description:
-    //         "Ground bean curd pancake with kimchi, seafoods, and green onion",
-    //       descriptionKr: "",
-    //       price: "11.50",
-    //     },
-    //     {
-    //       id: "E-2",
-    //       name: " Mung bean Korean Pancake",
-    //       nameKr: "녹두전",
-    //       description: "Ground mung-bean pancake with vegetables",
-    //       descriptionKr: "",
-    //       price: "8.50",
-    //     },
-    //     {
-    //       id: "E-3",
-    //       name: "Fresh Soft Tofu Salad",
-    //       nameKr: "순두부 샐러드",
-    //       description:
-    //         "Fresh mixed greens topped with housemade tofu and our special melon soy salad dressing",
-    //       descriptionKr: "",
-    //       price: "11.50",
-    //     },
-    //     {
-    //       id: "E-4",
-    //       name: "Fried Tofu",
-    //       nameKr: "구이 두부 샐러드",
-    //       description:
-    //         "Fresh Mixed greens topped with grilled tofu and homemade sauce",
-    //       descriptionKr: "",
-    //       price: "11.50",
-    //     },
-    //     {
-    //       id: "E-5",
-    //       name: "Sesame Oil Fried Tofu",
-    //       nameKr: "들기름 두부 구이",
-    //       description:
-    //         "Grilled fresh tofu with wild sesame oil and homemade soybean sauce",
-    //       descriptionKr: "",
-    //       price: "11.50",
-    //     },
-    //   ],
-    // },
     {
       image: heroImg.childImageSharp.fluid,
+      title: "Appetizer",
+      titleKr: "",
+      note: "",
+      items: [
+        // {
+        //   id: "E-1",
+        //   name: "Bean Curd Korean Pancake",
+        //   nameKr: "콩비지전",
+        //   description:
+        //     "Ground bean curd pancake with kimchi, seafoods, and green onion",
+        //   descriptionKr: "",
+        //   price: "11.50",
+        // },
+        // {
+        //   id: "E-2",
+        //   name: " Mung bean Korean Pancake",
+        //   nameKr: "녹두전",
+        //   description: "Ground mung-bean pancake with vegetables",
+        //   descriptionKr: "",
+        //   price: "8.50",
+        // },
+        {
+          id: "E-3",
+          name: "Fresh Soft Tofu Salad",
+          nameKr: "순두부 샐러드",
+          description:
+            "Fresh mixed greens topped with housemade tofu and our special melon soy salad dressing",
+          descriptionKr: "",
+          price: "11.50",
+        },
+        // {
+        //   id: "E-4",
+        //   name: "Fried Tofu",
+        //   nameKr: "구이 두부 샐러드",
+        //   description:
+        //     "Fresh Mixed greens topped with grilled tofu and homemade sauce",
+        //   descriptionKr: "",
+        //   price: "11.50",
+        // },
+        // {
+        //   id: "E-5",
+        //   name: "Sesame Oil Fried Tofu",
+        //   nameKr: "들기름 두부 구이",
+        //   description:
+        //     "Grilled fresh tofu with wild sesame oil and homemade soybean sauce",
+        //   descriptionKr: "",
+        //   price: "11.50",
+        // },
+      ],
+    },
+    {
+      image: "",
       title: "Tofu Soup",
       titleKr: "순두부",
       note: "Comes with a serving of rice",
@@ -339,7 +339,7 @@ export function Menu() {
         {
           id: "C4",
           name: "Spicy Korean Chicken Combo",
-          nameKr: "닭갈비 콤보",
+          nameKr: "닭 불고기 콤보",
           description: "Spicy korean chicken + Soft tofu soup",
           descriptionKr: "",
           price: "19.50",
@@ -437,50 +437,50 @@ export function Menu() {
     //     },
     //   ],
     // },
-    // {
-    //   image: seafoodSundubu.childImageSharp.fluid,
-    //   title: "Tofu Hot pot",
-    //   titleKr: "전골",
-    //   note: "Serves 2-3 people and comes with rice",
-    //   items: [
-    //     {
-    //       id: "THP1",
-    //       name: "Soft Tofu Dumpling Hot Pot",
-    //       nameKr: "순두부 만두 전골",
-    //       description:
-    //         "House made soft tofu + Dumplings + Assorted vegetables + Kimchi",
-    //       descriptionKr: "",
-    //       price: "27.90",
-    //     },
-    //     {
-    //       id: "THP2",
-    //       name: "Soft Tofu intestine Hot Pot",
-    //       nameKr: "순두부 내장 전골",
-    //       description:
-    //         "House made soft tofu + Mushroom medley + Assorted vegetables + Intestine",
-    //       descriptionKr: "",
-    //       price: "32.90",
-    //     },
-    //     {
-    //       id: "THP3",
-    //       name: "Soft Tofu Champong Hot Pot",
-    //       nameKr: "순두부 짬뽕 전골",
-    //       description:
-    //         "House made soft tofu + Mushroom medley + Assorted vegetables + Seafood medley (shrimp, calimari, clam, muscle), + House special spicy broth",
-    //       descriptionKr: "",
-    //       price: "34.90",
-    //     },
-    //     {
-    //       id: "THP4",
-    //       name: "Soft Tofu Seafood Hot Pot",
-    //       nameKr: "순두부 해물전골 ",
-    //       description:
-    //         "House made soft tofu + Seafood medley (octopus + shrimp + abalone + clams + squid and more)",
-    //       descriptionKr: "",
-    //       price: "39.90",
-    //     },
-    //   ],
-    // },
+    {
+      image: seafoodSundubu.childImageSharp.fluid,
+      title: "Tofu Hot pot",
+      titleKr: "전골",
+      note: "Serves 2-3 people and comes with rice",
+      items: [
+        {
+          id: "THP1",
+          name: "Soft Tofu Dumpling Hot Pot",
+          nameKr: "순두부 만두 전골",
+          description:
+            "House made soft tofu + Dumplings + Assorted vegetables + Kimchi",
+          descriptionKr: "",
+          price: "29.90",
+        },
+        {
+          id: "THP2",
+          name: "Soft Tofu intestine Hot Pot",
+          nameKr: "순두부 내장 전골",
+          description:
+            "House made soft tofu + Mushroom medley + Assorted vegetables + Intestine",
+          descriptionKr: "",
+          price: "32.90",
+        },
+        // {
+        //   id: "THP3",
+        //   name: "Soft Tofu Champong Hot Pot",
+        //   nameKr: "순두부 짬뽕 전골",
+        //   description:
+        //     "House made soft tofu + Mushroom medley + Assorted vegetables + Seafood medley (shrimp, calimari, clam, muscle), + House special spicy broth",
+        //   descriptionKr: "",
+        //   price: "34.90",
+        // },
+        {
+          id: "THP4",
+          name: "Soft Tofu Seafood Hot Pot",
+          nameKr: "순두부 해물전골 ",
+          description:
+            "House made soft tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more)",
+          descriptionKr: "",
+          price: "39.90",
+        },
+      ],
+    },
     // {
     //   image: nengkongKarlgugsu.childImageSharp.fluid,
     //   title: "Noodles",
