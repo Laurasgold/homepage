@@ -310,7 +310,7 @@ export function Menu() {
       image: sundubu.childImageSharp.fluid,
       title: "Tofu Soup Combo",
       titleKr: "순두부 콤보",
-      note: "Comes with a serving of rice",
+      note: "Comes with a serving of rice and your choice of soft tofu soup",
       items: [
         {
           id: "C1",
@@ -362,11 +362,11 @@ export function Menu() {
         },
         // {
         //   id: "TC8",
-        //   name: "Butter Abalone Combo",
-        //   nameKr: "전복구이 콤보",
-        //   description: "Butter roasted abalone + Soft tofu soup",
+        //   name: "Brisket Combo",
+        //   nameKr: "차돌 콤보",
+        //   description: "Marinated brisket, vegetables, special house sauce + Soft tofu soup",
         //   descriptionKr: "",
-        //   price: "19.50",
+        //   price: "21.50",
         // },
         {
           id: "C9",
@@ -382,7 +382,7 @@ export function Menu() {
         //   nameKr: "생선구어 콤보",
         //   description: " Grilled Intestine + Soft tofu soup",
         //   descriptionKr: "",
-        //   price: "19.50",
+        //   price: "20.50",
         // },
       ],
     },
@@ -444,7 +444,7 @@ export function Menu() {
       note: "Serves 2-3 people and comes with rice",
       items: [
         {
-          id: "THP1",
+          id: "HP1",
           name: "Soft Tofu Dumpling Hot Pot",
           nameKr: "순두부 만두 전골",
           description:
@@ -453,7 +453,7 @@ export function Menu() {
           price: "29.90",
         },
         {
-          id: "THP2",
+          id: "HP2",
           name: "Soft Tofu intestine Hot Pot",
           nameKr: "순두부 내장 전골",
           description:
@@ -471,7 +471,7 @@ export function Menu() {
         //   price: "34.90",
         // },
         {
-          id: "THP4",
+          id: "HP3",
           name: "Soft Tofu Seafood Hot Pot",
           nameKr: "순두부 해물전골 ",
           description:
