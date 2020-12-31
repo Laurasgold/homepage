@@ -140,7 +140,7 @@ export function Menu() {
         //   price: "11.50",
         // },
         // {
-        //   id: "E-2",
+        //   id: "E",
         //   name: " Mung bean Korean Pancake",
         //   nameKr: "녹두전",
         //   description: "Ground mung-bean pancake with vegetables",
@@ -148,7 +148,7 @@ export function Menu() {
         //   price: "8.50",
         // },
         {
-          id: "E-3",
+          id: "E-2",
           name: "Fresh Soft Tofu Salad",
           nameKr: "순두부 샐러드",
           description:
@@ -157,7 +157,7 @@ export function Menu() {
           price: "11.50",
         },
         // {
-        //   id: "E-4",
+        //   id: "E",
         //   name: "Fried Tofu",
         //   nameKr: "구이 두부 샐러드",
         //   description:
@@ -166,7 +166,7 @@ export function Menu() {
         //   price: "11.50",
         // },
         // {
-        //   id: "E-5",
+        //   id: "E-3",
         //   name: "Sesame Oil Fried Tofu",
         //   nameKr: "들기름 두부 구이",
         //   description:
@@ -237,7 +237,7 @@ export function Menu() {
           name: "Seaweed Soft Tofu Soup",
           nameKr: " 해초 순두부",
           description:
-            "5 different kids of seaweed, house made soft tofu, assorted vegetables, and kimchi",
+            "5 different kinds of seaweed, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.50",
           image: "",
