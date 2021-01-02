@@ -345,7 +345,7 @@ export function Menu() {
           price: "19.50",
         },
         {
-          id: "C6",
+          id: "C5",
           name: "Beef Combo",
           nameKr: "소불고기 콤보",
           description: "Korean BBQ style beef bulgogi + Soft tofu soup",
@@ -353,7 +353,7 @@ export function Menu() {
           price: "19.50",
         },
         {
-          id: "C7",
+          id: "C6",
           name: "Yellow Pollack Combo",
           nameKr: "황태구이 콤보",
           description: "Grilled yellow pollack + Soft tofu soup",
@@ -369,7 +369,7 @@ export function Menu() {
         //   price: "19.50",
         // },
         {
-          id: "C9",
+          id: "C7",
           name: "Spicy Pork Combo",
           nameKr: "돼지불고기 콤보 ",
           description: " Korean BBQ style spicy pork + Soft tofu soup",
