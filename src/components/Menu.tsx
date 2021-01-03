@@ -139,14 +139,6 @@ export function Menu() {
         //   descriptionKr: "",
         //   price: "11.50",
         // },
-        // {
-        //   id: "E",
-        //   name: " Mung bean Korean Pancake",
-        //   nameKr: "녹두전",
-        //   description: "Ground mung-bean pancake with vegetables",
-        //   descriptionKr: "",
-        //   price: "8.50",
-        // },
         {
           id: "E-2",
           name: "Fresh Soft Tofu Salad",
@@ -156,15 +148,6 @@ export function Menu() {
           descriptionKr: "",
           price: "11.50",
         },
-        // {
-        //   id: "E",
-        //   name: "Fried Tofu",
-        //   nameKr: "구이 두부 샐러드",
-        //   description:
-        //     "Fresh Mixed greens topped with grilled tofu and homemade sauce",
-        //   descriptionKr: "",
-        //   price: "11.50",
-        // },
         // {
         //   id: "E-3",
         //   name: "Sesame Oil Fried Tofu",
@@ -298,8 +281,8 @@ export function Menu() {
     //     },
     //     {
     //       id: "ST3",
-    //       name: "Pork Bulgogi",
-    //       nameKr: "전통 돼지 불고기",
+    //       name: "Spicy Pork Bulgogi",
+    //       nameKr: "매운 돼지 불고기",
     //       description: "Korean BBQ style marinated pork",
     //       descriptionKr: "",
     //       price: "25.90",
@@ -360,14 +343,6 @@ export function Menu() {
           descriptionKr: "",
           price: "19.50",
         },
-        // {
-        //   id: "TC8",
-        //   name: "Butter Abalone Combo",
-        //   nameKr: "전복구이 콤보",
-        //   description: "Butter roasted abalone + Soft tofu soup",
-        //   descriptionKr: "",
-        //   price: "19.50",
-        // },
         {
           id: "C7",
           name: "Spicy Pork Combo",
@@ -377,12 +352,20 @@ export function Menu() {
           price: "19.50",
         },
         // {
-        //   id: "TC10",
-        //   name: "Grilled Intestine Combo",
-        //   nameKr: "생선구어 콤보",
+        //   id: "C8",
+        //   name: "Intestine Combo",
+        //   nameKr: "곱창 콤보",
         //   description: " Grilled Intestine + Soft tofu soup",
         //   descriptionKr: "",
-        //   price: "19.50",
+        //   price: "20.50",
+        // },
+        // {
+        //   id: "C9",
+        //   name: "Brisket Combo",
+        //   nameKr: "차돌 콤보",
+        //   description: "Marinated brisket + Soft tofu soup",
+        //   descriptionKr: "",
+        //   price: "21.50",
         // },
       ],
     },
@@ -393,7 +376,7 @@ export function Menu() {
     //   note: "Served on a searing hot stone bowl with soybean paste soup",
     //   items: [
     //     {
-    //       id: "SB1",
+    //       id: "B1",
     //       name: "Beef Bulgogi Bibimbap",
     //       nameKr: "소불고기 돌솥",
     //       description:
@@ -402,7 +385,7 @@ export function Menu() {
     //       price: "14.50",
     //     },
     //     {
-    //       id: "SB2",
+    //       id: "B2",
     //       name: "Fresh Tofu Bibimbap",
     //       nameKr: "순두부 돌솥",
     //       description: "House made tofu and assorted veggies",
@@ -410,16 +393,16 @@ export function Menu() {
     //       price: "13.50",
     //     },
     //     {
-    //       id: "SB3",
+    //       id: "B3",
     //       name: "Kimchi Bibimbap",
     //       nameKr: "김치 돌솥",
     //       description:
-    //         "Kimchi, marinated korean BBQ pork, and assorted veggies",
+    //         "Kimchi, marinated pork, and assorted veggies",
     //       descriptionKr: "",
     //       price: "13.50",
     //     },
     //     {
-    //       id: "SB4",
+    //       id: "B4",
     //       name: "Spicy Pork bulgogi Bibimbap",
     //       nameKr: "매운 돼지 불고기 돌솥",
     //       description:
@@ -428,7 +411,7 @@ export function Menu() {
     //       price: "14.50",
     //     },
     //     {
-    //       id: "SB5",
+    //       id: "B5",
     //       name: "Seaweed Salad Bibimbap",
     //       nameKr: "해초 돌솥",
     //       description: "Assorted veggies and seaweeds",
@@ -444,7 +427,7 @@ export function Menu() {
       note: "Serves 2-3 people and comes with rice",
       items: [
         {
-          id: "THP1",
+          id: "HP1",
           name: "Soft Tofu Dumpling Hot Pot",
           nameKr: "순두부 만두 전골",
           description:
@@ -453,7 +436,7 @@ export function Menu() {
           price: "29.90",
         },
         {
-          id: "THP2",
+          id: "HP2",
           name: "Soft Tofu intestine Hot Pot",
           nameKr: "순두부 내장 전골",
           description:
@@ -461,17 +444,8 @@ export function Menu() {
           descriptionKr: "",
           price: "32.90",
         },
-        // {
-        //   id: "THP3",
-        //   name: "Soft Tofu Champong Hot Pot",
-        //   nameKr: "순두부 짬뽕 전골",
-        //   description:
-        //     "House made soft tofu + Mushroom medley + Assorted vegetables + Seafood medley (shrimp, calimari, clam, muscle), + House special spicy broth",
-        //   descriptionKr: "",
-        //   price: "34.90",
-        // },
         {
-          id: "THP4",
+          id: "HP3",
           name: "Soft Tofu Seafood Hot Pot",
           nameKr: "순두부 해물전골 ",
           description:
@@ -488,21 +462,12 @@ export function Menu() {
     //   note: "",
     //   items: [
     //     {
-    //       id: "ND1",
-    //       name: "Cold Soy Bean Noodles",
-    //       nameKr: "냉콩국수",
-    //       description:
-    //         "House made soft tofu + Dumplings + Assorted vegetables + Kimchi",
-    //       descriptionKr: "",
-    //       price: "12.90",
-    //     },
-    //     {
-    //       id: "ND2",
+    //       id: "N1",
     //       name: "Soft Tofu Seafood Spicy Noodles",
     //       nameKr: "순두부 해물 칼국수",
     //       description: "",
     //       descriptionKr: "",
-    //       price: "14.50",
+    //       price: "16.50",
     //     },
     //   ],
     // },
@@ -521,15 +486,6 @@ export function Menu() {
     //       descriptionKr: "",
     //       price: "29.50",
     //     },
-    //     {
-    //       id: "",
-    //       name: "Pyun-yook",
-    //       nameKr: "편육",
-    //       description:
-    //         "Steamed, pressed, and sliced beef + Sliced garlic + Assorted veggie wraps + Jalapeno + Shrimp sauce",
-    //       descriptionKr: "",
-    //       price: "27.50",
-    //     },
     //   ],
     // },
     // {
@@ -539,7 +495,7 @@ export function Menu() {
     //   note: "",
     //   items: [
     //     {
-    //       id: "VT1",
+    //       id: "V1",
     //       name: "Fresh Soft Tofu Salad",
     //       nameKr: "순두부 샐러드",
     //       description:
@@ -548,34 +504,25 @@ export function Menu() {
     //       price: "11.50",
     //     },
     //     {
-    //       id: "VT2",
-    //       name: "Grilled Tofu Salad",
-    //       nameKr: "두부 구이 샐러드",
+    //       id: "V2",
+    //       name: "Vegetarian Korean Miso Soft Tofu Soup",
+    //       nameKr: "된장 순두부",
     //       description:
-    //         "Fresh mixed greens topped with deep fried tofu and our special soy salad dressing",
+    //         "Korean miso broth, house made soft tofu, and assorted vegetables",
     //       descriptionKr: "",
-    //       price: "11.50",
+    //       price: "12.50",
     //     },
     //     {
-    //       id: "VT3",
-    //       name: "Fresh Soft Tofu",
-    //       nameKr: "초두부",
-    //       description:
-    //         "House made tofu to be enjoyed fresh with our special soy sauce dressing.",
-    //       descriptionKr: "",
-    //       price: "11.90",
-    //     },
-    //     {
-    //       id: "VT4",
-    //       name: "Kimchi Soft Tofu Soup",
+    //       id: "V3",
+    //       name: "Vegetarian Kimchi Soft Tofu Soup",
     //       nameKr: "김치 순두부",
     //       description: "House made soft tofu, veggies, and kimchi",
     //       descriptionKr: "",
     //       price: "12.50",
     //     },
     //     {
-    //       id: "VT5",
-    //       name: "Seaweed Soft Tofu Soup",
+    //       id: "V4",
+    //       name: "Vegetarian Seaweed Soft Tofu Soup",
     //       nameKr: "해초 순두부",
     //       description:
     //         "Assorted seaweed, house made soft tofu, assorted vegetables, and kimchi",
@@ -583,7 +530,7 @@ export function Menu() {
     //       price: "12.50",
     //     },
     //     {
-    //       id: "VT6",
+    //       id: "V5",
     //       name: "Vegetable Soft Tofu Soup",
     //       nameKr: "야채 순두부",
     //       description: "Mixed vegetables, house made soft tofu, and kimchi",
@@ -591,24 +538,24 @@ export function Menu() {
     //       price: "11.90",
     //     },
     //     {
-    //       id: "VT7",
-    //       name: "Kimchi Hot Stone Bibimbap",
+    //       id: "V6",
+    //       name: "Vegetarian Kimchi Hot Stone Bibimbap",
     //       nameKr: "김치 비빔밥",
     //       description: "Kimchi and assortment of vegetables",
     //       descriptionKr: "",
     //       price: "14.90",
     //     },
     //     {
-    //       id: "VT8",
-    //       name: "Seaweed Hot Stone Bibimbap",
+    //       id: "V7",
+    //       name: "Vegetarian Seaweed Hot Stone Bibimbap",
     //       nameKr: "해초 비빔밥",
     //       description: "Assorted seaweed and vegetables",
     //       descriptionKr: "",
     //       price: "14.90",
     //     },
     //     {
-    //       id: "VT9",
-    //       name: "Tofu Hot Stone Bibimbap",
+    //       id: "V8",
+    //       name: "Vegetarian Tofu Hot Stone Bibimbap",
     //       nameKr: "순두부 비빔밥",
     //       description: "Tofu, and assortment of vegetables",
     //       descriptionKr: "",
