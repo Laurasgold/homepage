@@ -329,7 +329,7 @@ export function Menu() {
         },
         {
           id: "C5",
-          name: "Beef Combo",
+          name: "Beef Bulgogi Combo",
           nameKr: "소불고기 콤보",
           description: "Korean BBQ style beef bulgogi + Soft tofu soup",
           descriptionKr: "",
