@@ -131,7 +131,7 @@ export function Menu() {
       note: "",
       items: [
         {
-          id: "E-1",
+          id: "A-1",
           name: "Bean Curd Korean Pancake",
           nameKr: "콩비지전",
           description:
@@ -140,7 +140,7 @@ export function Menu() {
           price: "11.50",
         },
         {
-          id: "E-2",
+          id: "A-2",
           name: "Fresh Soft Tofu Salad",
           nameKr: "순두부 샐러드",
           description:
@@ -149,7 +149,7 @@ export function Menu() {
           price: "11.50",
         },
         {
-          id: "E-3",
+          id: "A-3",
           name: "Sesame Oil Fried Tofu",
           nameKr: "들기름 두부 구이",
           description:
