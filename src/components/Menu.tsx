@@ -130,15 +130,15 @@ export function Menu() {
       titleKr: "",
       note: "",
       items: [
-        {
-          id: "E-1",
-          name: "Bean Curd Korean Pancake",
-          nameKr: "콩비지전",
-          description:
-            "Ground bean curd pancake with kimchi, seafoods, and green onion",
-          descriptionKr: "",
-          price: "11.50",
-        },
+        // {
+        //   id: "E-1",
+        //   name: "Bean Curd Korean Pancake",
+        //   nameKr: "콩비지전",
+        //   description:
+        //     "Ground bean curd pancake with kimchi, seafoods, and green onion",
+        //   descriptionKr: "",
+        //   price: "11.50",
+        // },
         {
           id: "E-2",
           name: "Fresh Soft Tofu Salad",
