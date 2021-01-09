@@ -27,6 +27,9 @@ export function Menu() {
   const {
     heroImg,
     bibimbap,
+    beefBibimbap,
+    porkBibimbap,
+    porkTraditional,
     dorsolBibimbap,
     dubuSalad,
     cheodangSundubu,
@@ -47,6 +50,36 @@ export function Menu() {
       }
       # Menu items
       bibimbap: file(relativePath: { eq: "menu/bibimbap.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      beefBibimbap: file(
+        relativePath: { eq: "menu/beef-bulgulgi-bibimbap.jpeg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      porkBibimbap: file(
+        relativePath: { eq: "menu/spicy-pork-bibimbap.jpeg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      porkTraditional: file(
+        relativePath: { eq: "menu/spicy-pork-traditional.jpeg" }
+      ) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -130,15 +163,15 @@ export function Menu() {
       titleKr: "",
       note: "",
       items: [
-         {
-           id: "A-1",
-           name: "Bean Curd Korean Pancake",
-           nameKr: "콩비지전",
-           description:
-             "Ground bean curd pancake with kimchi, seafoods, and green onion",
+        {
+          id: "A-1",
+          name: "Bean Curd Korean Pancake",
+          nameKr: "콩비지전",
+          description:
+            "Ground bean curd pancake with kimchi, seafoods, and green onion",
           descriptionKr: "",
           price: "11.50",
-         },
+        },
         {
           id: "A-2",
           name: "Fresh Soft Tofu Salad",
@@ -265,6 +298,7 @@ export function Menu() {
       items: [
         {
           id: "ST1",
+          image: porkTraditional.childImageSharp.fluid,
           name: "Pork Soybean Curd",
           nameKr: "콩비지",
           description: "Kongbiji: house-made ground soybean, pork, kimchi",
@@ -274,16 +308,20 @@ export function Menu() {
         {
           id: "ST2",
           name: "Beef Bulgogi",
+          image: beefBibimbap.childImageSharp.fluid,
           nameKr: "전통 소불고기",
-          description: "Korean BBQ style marinated ribeye beef, with broth, mushrooms, and assorted vegetables in a large pot",
+          description:
+            "Korean BBQ style marinated ribeye beef, with broth, mushrooms, and assorted vegetables in a large pot",
           descriptionKr: "",
           price: "27.90",
         },
         {
           id: "ST3",
           name: "Spicy Pork Bulgogi",
+          image: porkBibimbap.childImageSharp.fluid,
           nameKr: "매운 돼지 불고기",
-          description: "Korean BBQ style marinated pork, with broth, mushrooms, and assorted vegetables in a large pot",
+          description:
+            "Korean BBQ style marinated pork, with broth, mushrooms, and assorted vegetables in a large pot",
           descriptionKr: "",
           price: "25.90",
         },
