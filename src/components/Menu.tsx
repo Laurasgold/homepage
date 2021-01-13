@@ -288,6 +288,16 @@ export function Menu() {
           price: "11.50",
           image: cheodangSundubu.childImageSharp.fluid,
         },
+        {
+          id: "TS10",
+          name: "Ham & Sausage Tofu Soup",
+          nameKr: "햄, 소세지 순두부",
+          description:
+            "Ham, sausage, house made soft tofu, assorted vegetables, and kimchi",
+          descriptionKr: "",
+          price: "12.90",
+          image: "",
+        },
       ],
     },
     {
