@@ -308,7 +308,7 @@ export function Menu() {
       items: [
         {
           id: "ST1",
-          image: porkTraditional.childImageSharp.fluid,
+          image: "",
           name: "Pork Soybean Curd",
           nameKr: "콩비지",
           description: "Kongbiji: house-made ground soybean, pork, kimchi",
@@ -318,7 +318,6 @@ export function Menu() {
         {
           id: "ST2",
           name: "Beef Bulgogi",
-          image: beefBibimbap.childImageSharp.fluid,
           nameKr: "전통 소불고기",
           description:
             "Korean BBQ style marinated ribeye beef, with broth, mushrooms, and assorted vegetables in a large pot",
@@ -328,7 +327,7 @@ export function Menu() {
         {
           id: "ST3",
           name: "Spicy Pork Bulgogi",
-          image: porkBibimbap.childImageSharp.fluid,
+          image: porkTraditional.childImageSharp.fluid,
           nameKr: "매운 돼지 불고기",
           description:
             "Korean BBQ style marinated pork, with broth, mushrooms, and assorted vegetables in a large pot",
@@ -347,7 +346,7 @@ export function Menu() {
           id: "C1",
           name: "Marinated Back-Ribs Combo",
           nameKr: "돼지갈비콤보",
-          description: "Marinated back ribs + Soft tofu soup",
+          description: "Marinated back ribs + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
@@ -355,7 +354,7 @@ export function Menu() {
           id: "C2",
           name: "LA Style Ribs Combo",
           nameKr: "LA 갈비 콤보",
-          description: "LA style ribs + Soft tofu soup",
+          description: "LA style ribs + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
@@ -363,7 +362,7 @@ export function Menu() {
           id: "C3",
           name: "Marinated Crab Combo",
           nameKr: "양념게장 콤보",
-          description: "Marinated crab + Soft tofu soup",
+          description: "Marinated crab + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
@@ -371,7 +370,7 @@ export function Menu() {
           id: "C4",
           name: "Spicy Korean Chicken Combo",
           nameKr: "닭 불고기 콤보",
-          description: "Spicy korean chicken + Soft tofu soup",
+          description: "Spicy korean chicken + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
@@ -379,7 +378,8 @@ export function Menu() {
           id: "C5",
           name: "Beef Bulgogi Combo",
           nameKr: "소불고기 콤보",
-          description: "Korean BBQ style beef bulgogi + Soft tofu soup",
+          description:
+            "Korean BBQ style beef bulgogi + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
@@ -387,7 +387,7 @@ export function Menu() {
           id: "C6",
           name: "Yellow Pollack Combo",
           nameKr: "황태구이 콤보",
-          description: "Grilled yellow pollack + Soft tofu soup",
+          description: "Grilled yellow pollack + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
@@ -395,7 +395,8 @@ export function Menu() {
           id: "C7",
           name: "Spicy Pork Combo",
           nameKr: "돼지불고기 콤보 ",
-          description: " Korean BBQ style spicy pork + Soft tofu soup",
+          description:
+            " Korean BBQ style spicy pork + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.50",
         },
@@ -403,7 +404,7 @@ export function Menu() {
           id: "C8",
           name: "Intestine Combo",
           nameKr: "곱창 콤보",
-          description: " Grilled Intestine + Soft tofu soup",
+          description: " Grilled Intestine + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "20.50",
         },
@@ -411,7 +412,7 @@ export function Menu() {
           id: "C9",
           name: "Brisket Combo",
           nameKr: "차돌 콤보",
-          description: "Marinated brisket + Soft tofu soup",
+          description: "Marinated brisket + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "21.50",
         },
@@ -425,6 +426,7 @@ export function Menu() {
       items: [
         {
           id: "B1",
+          image: beefBibimbap.childImageSharp.fluid,
           name: "Beef Bulgogi Bibimbap",
           nameKr: "소불고기 돌솥",
           description:
@@ -450,7 +452,8 @@ export function Menu() {
         },
         {
           id: "B4",
-          name: "Spicy Pork bulgogi Bibimbap",
+          image: porkBibimbap.childImageSharp.fluid,
+          name: "Spicy Pork Bulgogi Bibimbap",
           nameKr: "매운 돼지 불고기 돌솥",
           description:
             "Korean BBQ style spicy pork bulgogi and assorted veggies",
@@ -780,7 +783,7 @@ export function Menu() {
             <h3 className="food-title">
               {i + 1}. {food.title} {food.titleKr && `(${food.titleKr})`}
             </h3>
-            {food.note && <p className="note">*{food.note}</p>}
+            {food.note && <p className="note">- {food.note}</p>}
             <ul>
               {food.items.map(item => (
                 <li key={item.id} className="food-item">

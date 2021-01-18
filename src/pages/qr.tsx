@@ -14,6 +14,11 @@ export default function MenuPage({ location }) {
           <Menu />
         </div>
         <div className="container center-text">
+          <p className="small">
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or
+            eggs may increase your risk of foodborne illness. <br />
+            Caution: stone bowls may be very hot.
+          </p>
           <Hr />
           <p>
             Made by{" "}
