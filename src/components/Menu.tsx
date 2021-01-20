@@ -212,7 +212,7 @@ export function Menu() {
           name: "Dumpling Soft Tofu Soup",
           nameKr: "만두 순두부",
           description:
-            "Dumplings, house made soft tofu, assorted vegetables, and kimchi",
+            "Pork dumplings, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
           price: "12.50",
           image: manduSundubu.childImageSharp.fluid,
@@ -315,33 +315,54 @@ export function Menu() {
       titleKr: "",
       note: "Serves 2-3 people and comes with rice",
       items: [
+
         {
           id: "ST1",
-          image: "",
-          name: "Pork Soybean Curd",
-          nameKr: "콩비지",
-          description: "Kongbiji: house-made ground soybean, pork, kimchi",
+          name: "Beef Bulgogi",
+          nameKr: "소불고기",
+          description:
+            "Korean BBQ style marinated ribeye beef",
           descriptionKr: "",
-          price: "21.90",
+          price: "19.50",
         },
         {
           id: "ST2",
-          name: "Beef Bulgogi",
-          nameKr: "전통 소불고기",
+          name: "Spicy Pork Bulgogi",
+          image: '',
+          nameKr: "매운 돼지 불고기",
           description:
-            "Korean BBQ style marinated ribeye beef, with broth, mushrooms, and assorted vegetables in a large pot",
+            "Korean BBQ style marinated spicy pork",
           descriptionKr: "",
-          price: "27.90",
+          price: "19.50",
         },
         {
           id: "ST3",
-          name: "Spicy Pork Bulgogi",
-          image: porkTraditional.childImageSharp.fluid,
-          nameKr: "매운 돼지 불고기",
+          name: "Grilled Spicy Intestines",
+          nameKr: "매운곱창볶음",
           description:
-            "Korean BBQ style marinated pork, with broth, mushrooms, and assorted vegetables in a large pot",
+            "Marinated beef intestines",
           descriptionKr: "",
-          price: "25.90",
+          price: "19.50",
+        },
+        {
+          id: "ST4",
+          name: "Grilled Brisket",
+          image: '',
+          nameKr: "차돌볶음",
+          description:
+            "Grilled marinated brisket",
+          descriptionKr: "",
+          price: "19.50",
+        },
+        {
+          id: "ST5",
+          name: "LA Style Ribs",
+          image: '',
+          nameKr: "LA 갈비",
+          description:
+            "Marinated korean BBQ short ribs",
+          descriptionKr: "",
+          price: "20.50",
         },
       ],
     },
@@ -490,7 +511,7 @@ export function Menu() {
           name: "Soft Tofu Dumpling Hot Pot",
           nameKr: "순두부 만두 전골",
           description:
-            "House made soft tofu + Dumplings + Assorted vegetables + Kimchi",
+            "House made soft tofu + Pork dumplings + Assorted vegetables + Kimchi",
           descriptionKr: "",
           price: "29.90",
         },
@@ -511,6 +532,45 @@ export function Menu() {
             "House made soft tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more)",
           descriptionKr: "",
           price: "39.90",
+        },
+        
+        {
+          id: "HP4",
+          name: "Beef Bulgogi",
+          nameKr: "전통 소불고기",
+          description:
+            "Korean BBQ style marinated ribeye beef, with broth, mushrooms, and assorted vegetables in a large pot",
+          descriptionKr: "",
+          price: "28.90",
+        },
+        {
+          id: "HP5",
+          name: "Spicy Pork Bulgogi",
+          image: porkTraditional.childImageSharp.fluid,
+          nameKr: "매운 돼지 불고기",
+          description:
+            "Korean BBQ style marinated pork, with broth, mushrooms, and assorted vegetables in a large pot",
+          descriptionKr: "",
+          price: "28.90",
+        },
+         {
+          id: "HP6",
+          name: "Brisket Hot Pot",
+          image: '',
+          nameKr: "자돌 전골",
+          description:
+            "Korean brisket, with broth, mushrooms, and assorted vegetables in a large pot",
+          descriptionKr: "",
+          price: "31.90",
+        },
+         {
+          id: "HP7",
+          image: "",
+          name: "Pork Soybean Curd",
+          nameKr: "콩비지",
+          description: "Kongbiji: house-made ground soybean, pork, kimchi",
+          descriptionKr: "",
+          price: "21.90",
         },
       ],
     },
@@ -728,12 +788,12 @@ export function Menu() {
           nameKr: "소주",
           price: "10.90",
         },
-        // {
-        //   id: "",
-        //   name: "Baekseju",
-        //   nameKr: "백세주",
-        //   price: "11.95",
-        // },
+        {
+           id: "",
+           name: "Baekseju",
+           nameKr: "백세주",
+           price: "11.95",
+        },
         {
           id: "",
           name: "Beer",
