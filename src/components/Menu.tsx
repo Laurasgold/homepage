@@ -323,7 +323,7 @@ export function Menu() {
           description:
             "Korean BBQ style marinated ribeye beef",
           descriptionKr: "",
-          price: "19.50",
+          price: "19.95",
         },
         {
           id: "ST2",
@@ -333,7 +333,7 @@ export function Menu() {
           description:
             "Korean BBQ style marinated spicy pork",
           descriptionKr: "",
-          price: "19.50",
+          price: "19.95",
         },
         {
           id: "ST3",
@@ -342,7 +342,7 @@ export function Menu() {
           description:
             "Marinated beef intestines",
           descriptionKr: "",
-          price: "19.50",
+          price: "19.95",
         },
         {
           id: "ST4",
@@ -352,7 +352,7 @@ export function Menu() {
           description:
             "Grilled marinated brisket",
           descriptionKr: "",
-          price: "19.50",
+          price: "21.95",
         },
         {
           id: "ST5",
@@ -362,7 +362,7 @@ export function Menu() {
           description:
             "Marinated korean BBQ short ribs",
           descriptionKr: "",
-          price: "20.50",
+          price: "19.95",
         },
       ],
     },
@@ -378,7 +378,7 @@ export function Menu() {
           nameKr: "돼지갈비콤보",
           description: "Marinated back ribs + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "19.50",
+          price: "18.95",
         },
         {
           id: "C2",
@@ -386,7 +386,7 @@ export function Menu() {
           nameKr: "LA 갈비 콤보",
           description: "LA style ribs + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "19.50",
+          price: "19.95",
         },
         {
           id: "C3",
@@ -394,7 +394,7 @@ export function Menu() {
           nameKr: "양념게장 콤보",
           description: "Marinated crab + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "19.50",
+          price: "19.95",
         },
         {
           id: "C4",
@@ -402,7 +402,7 @@ export function Menu() {
           nameKr: "닭 불고기 콤보",
           description: "Spicy korean chicken + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "19.50",
+          price: "18.95",
         },
         {
           id: "C5",
@@ -411,7 +411,7 @@ export function Menu() {
           description:
             "Korean BBQ style beef bulgogi + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "19.50",
+          price: "19.95",
         },
         {
           id: "C6",
@@ -419,7 +419,7 @@ export function Menu() {
           nameKr: "황태구이 콤보",
           description: "Grilled yellow pollack + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "19.50",
+          price: "18.95",
         },
         {
           id: "C7",
@@ -428,7 +428,7 @@ export function Menu() {
           description:
             " Korean BBQ style spicy pork + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "19.50",
+          price: "19.95",
         },
         {
           id: "C8",
@@ -436,7 +436,7 @@ export function Menu() {
           nameKr: "곱창 콤보",
           description: " Grilled Intestine + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "20.50",
+          price: "21.95",
         },
         {
           id: "C9",
@@ -444,7 +444,7 @@ export function Menu() {
           nameKr: "차돌 콤보",
           description: "Marinated brisket + Your choice of soft tofu soup",
           descriptionKr: "",
-          price: "21.50",
+          price: "21.95",
         },
       ],
     },
@@ -462,7 +462,7 @@ export function Menu() {
           description:
             "Marinated korean BBQ style bulgogi beef and assorted veggies",
           descriptionKr: "",
-          price: "14.50",
+          price: "14.95",
         },
         {
           id: "B2",
@@ -470,7 +470,7 @@ export function Menu() {
           nameKr: "순두부 돌솥",
           description: "House made tofu and assorted veggies",
           descriptionKr: "",
-          price: "13.50",
+          price: "13.95",
         },
         {
           id: "B3",
@@ -478,7 +478,7 @@ export function Menu() {
           nameKr: "김치 돌솥",
           description: "Kimchi and assorted veggies",
           descriptionKr: "",
-          price: "13.50",
+          price: "13.95",
         },
         {
           id: "B4",
@@ -488,7 +488,7 @@ export function Menu() {
           description:
             "Korean BBQ style spicy pork bulgogi and assorted veggies",
           descriptionKr: "",
-          price: "14.50",
+          price: "14.95",
         },
         {
           id: "B5",
@@ -496,7 +496,7 @@ export function Menu() {
           nameKr: "해초 돌솥",
           description: "Assorted veggies and seaweeds",
           descriptionKr: "",
-          price: "14.50",
+          price: "14.95",
         },
       ],
     },
@@ -513,7 +513,7 @@ export function Menu() {
           description:
             "House made soft tofu + Pork dumplings + Assorted vegetables + Kimchi",
           descriptionKr: "",
-          price: "29.90",
+          price: "29.95",
         },
         {
           id: "HP2",
@@ -522,7 +522,7 @@ export function Menu() {
           description:
             "House made soft tofu + Mushroom medley + Assorted vegetables + Intestine",
           descriptionKr: "",
-          price: "32.90",
+          price: "32.95",
         },
         {
           id: "HP3",
@@ -531,27 +531,27 @@ export function Menu() {
           description:
             "House made soft tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more)",
           descriptionKr: "",
-          price: "39.90",
+          price: "39.95",
         },
         
         {
           id: "HP4",
-          name: "Beef Bulgogi",
+          name: "Beef Bulgogi Hot Pot",
           nameKr: "전통 소불고기",
           description:
-            "Korean BBQ style marinated ribeye beef, with broth, mushrooms, and assorted vegetables in a large pot",
+            "Korean BBQ style marinated ribeye beef, with broth, mushrooms, noodles, and assorted vegetables in a large pot",
           descriptionKr: "",
-          price: "28.90",
+          price: "28.95",
         },
         {
           id: "HP5",
-          name: "Spicy Pork Bulgogi",
+          name: "Spicy Pork Bulgogi Hot Pot",
           image: porkTraditional.childImageSharp.fluid,
           nameKr: "매운 돼지 불고기",
           description:
-            "Korean BBQ style marinated pork, with broth, mushrooms, and assorted vegetables in a large pot",
+            "Korean BBQ style marinated pork, with broth, mushrooms, noodles, and assorted vegetables in a large pot",
           descriptionKr: "",
-          price: "28.90",
+          price: "28.95",
         },
          {
           id: "HP6",
@@ -559,9 +559,9 @@ export function Menu() {
           image: '',
           nameKr: "자돌 전골",
           description:
-            "Korean brisket, with broth, mushrooms, and assorted vegetables in a large pot",
+            "Korean brisket, with broth, mushrooms, noodles, and assorted vegetables in a large pot",
           descriptionKr: "",
-          price: "31.90",
+          price: "31.95",
         },
          {
           id: "HP7",
@@ -570,7 +570,7 @@ export function Menu() {
           nameKr: "콩비지",
           description: "Kongbiji: house-made ground soybean, pork, kimchi",
           descriptionKr: "",
-          price: "21.90",
+          price: "21.95",
         },
       ],
     },
@@ -662,7 +662,7 @@ export function Menu() {
           nameKr: "김치 돌솥",
           description: "Kimchi and assortment of vegetables",
           descriptionKr: "",
-          price: "13.50",
+          price: "13.95",
         },
         {
           id: "V7",
@@ -670,7 +670,7 @@ export function Menu() {
           nameKr: "해초 돌솥",
           description: "Assorted seaweed and vegetables",
           descriptionKr: "",
-          price: "14.50",
+          price: "14.95",
         },
         {
           id: "V8",
@@ -678,7 +678,7 @@ export function Menu() {
           nameKr: "순두부 돌솥",
           description: "Tofu, and assortment of vegetables",
           descriptionKr: "",
-          price: "13.50",
+          price: "13.95",
         },
       ],
     },
