@@ -205,7 +205,7 @@ export function Menu() {
       image: "",
       title: "Tofu Soup",
       titleKr: "순두부",
-      note: "Comes with a serving of rice",
+      note: "Comes with a serving of stone pot rice",
       items: [
         {
           id: "TS1",
@@ -370,7 +370,7 @@ export function Menu() {
       image: sundubu.childImageSharp.fluid,
       title: "Tofu Soup Combo",
       titleKr: "순두부 콤보",
-      note: "Comes with a serving of rice",
+      note: "Comes with a serving of stone pot rice",
       items: [
         {
           id: "C1",
