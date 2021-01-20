@@ -168,7 +168,7 @@ export function Menu() {
           name: "Bean Curd Korean Pancake",
           nameKr: "콩비지전",
           description:
-            "Ground bean curd pancake with kimchi, seafoods, and green onion",
+            "Ground bean curd pancake with chopped cabbage, seafood, and green onion",
           descriptionKr: "",
           price: "11.50",
         },
@@ -186,7 +186,16 @@ export function Menu() {
           name: "Sesame Oil Fried Tofu",
           nameKr: "들기름 두부 구이",
           description:
-            "Grilled fresh tofu with wild sesame oil and homemade soybean sauce",
+            "Grilled fresh tofu with wild sesame oil and homemade soysauce",
+          descriptionKr: "",
+          price: "11.50",
+        },
+         {
+          id: "A-4",
+          name: "Mung Bean Pancake",
+          nameKr: "빈대떡",
+          description:
+            "Mung bean, cabbage, and green onions",
           descriptionKr: "",
           price: "11.50",
         },
@@ -446,7 +455,7 @@ export function Menu() {
           id: "B3",
           name: "Kimchi Bibimbap",
           nameKr: "김치 돌솥",
-          description: "Kimchi, marinated pork, and assorted veggies",
+          description: "Kimchi and assorted veggies",
           descriptionKr: "",
           price: "13.50",
         },
