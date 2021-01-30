@@ -539,7 +539,7 @@ export function Menu() {
           name: "Beef Bulgogi Hot Pot",
           nameKr: "전통 소불고기",
           description:
-            "Korean BBQ style marinated ribeye beef, with broth, mushrooms, noodles, and assorted vegetables in a large pot",
+            "Korean BBQ style marinated ribeye beef + broth + tofu + mushrooms + noodles + and assorted vegetables in a large pot",
           descriptionKr: "",
           price: "28.95",
         },
@@ -549,7 +549,7 @@ export function Menu() {
           image: porkTraditional.childImageSharp.fluid,
           nameKr: "매운 돼지 불고기",
           description:
-            "Korean BBQ style marinated pork, with broth, mushrooms, noodles, and assorted vegetables in a large pot",
+            "Korean BBQ style marinated pork + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
           descriptionKr: "",
           price: "28.95",
         },
@@ -559,7 +559,7 @@ export function Menu() {
           image: '',
           nameKr: "자돌 전골",
           description:
-            "Korean brisket, with broth, mushrooms, noodles, and assorted vegetables in a large pot",
+            "Korean brisket + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
           descriptionKr: "",
           price: "31.95",
         },
