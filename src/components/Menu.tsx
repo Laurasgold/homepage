@@ -396,14 +396,14 @@ export function Menu() {
           descriptionKr: "",
           price: "19.95",
         },
-        {
-          id: "C4",
-          name: "Spicy Korean Chicken Combo",
-          nameKr: "닭 불고기 콤보",
-          description: "Spicy korean chicken + Your choice of soft tofu soup",
-          descriptionKr: "",
-          price: "18.95",
-        },
+      //  {
+      //    id: "C4",
+      //    name: "Spicy Korean Chicken Combo",
+      //    nameKr: "닭 불고기 콤보",
+      //    description: "Spicy korean chicken + Your choice of soft tofu soup",
+      //    descriptionKr: "",
+      //    price: "18.95",
+      //  },
         {
           id: "C5",
           name: "Beef Bulgogi Combo",
