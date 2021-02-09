@@ -163,15 +163,15 @@ export function Menu() {
       titleKr: "",
       note: "",
       items: [
-     //   {
-     //     id: "A-1",
-     //     name: "Bean Curd Korean Pancake",
-     //     nameKr: "콩비지전",
-     //    description:
-     //       "Ground bean curd pancake with chopped cabbage, seafood, and green onion",
-     //     descriptionKr: "",
-      //    price: "11.50",
-     //   },
+        //   {
+        //     id: "A-1",
+        //     name: "Bean Curd Korean Pancake",
+        //     nameKr: "콩비지전",
+        //    description:
+        //       "Ground bean curd pancake with chopped cabbage, seafood, and green onion",
+        //     descriptionKr: "",
+        //    price: "11.50",
+        //   },
         {
           id: "A-2",
           name: "Fresh Soft Tofu Salad",
@@ -190,12 +190,11 @@ export function Menu() {
           descriptionKr: "",
           price: "11.50",
         },
-         {
+        {
           id: "A-4",
           name: "Mung Bean Pancake",
           nameKr: "빈대떡",
-          description:
-            "Mung bean, cabbage, and green onions",
+          description: "Mung bean, cabbage, and green onions",
           descriptionKr: "",
           price: "11.50",
         },
@@ -313,25 +312,22 @@ export function Menu() {
       image: "",
       title: "Special Traditional",
       titleKr: "",
-      note: "Serves 2-3 people and comes with rice",
+      note: "Serves 1-2 people and comes with rice",
       items: [
-
         {
           id: "ST1",
           name: "Beef Bulgogi",
           nameKr: "소불고기",
-          description:
-            "Korean BBQ style marinated ribeye beef",
+          description: "Korean BBQ style marinated ribeye beef",
           descriptionKr: "",
           price: "19.95",
         },
         {
           id: "ST2",
           name: "Spicy Pork Bulgogi",
-          image: '',
+          image: "",
           nameKr: "매운 돼지 불고기",
-          description:
-            "Korean BBQ style marinated spicy pork",
+          description: "Korean BBQ style marinated spicy pork",
           descriptionKr: "",
           price: "19.95",
         },
@@ -339,28 +335,25 @@ export function Menu() {
           id: "ST3",
           name: "Grilled Spicy Intestines",
           nameKr: "매운곱창볶음",
-          description:
-            "Marinated beef intestines",
+          description: "Marinated beef intestines",
           descriptionKr: "",
           price: "19.95",
         },
         {
           id: "ST4",
           name: "Grilled Brisket",
-          image: '',
+          image: "",
           nameKr: "차돌볶음",
-          description:
-            "Grilled marinated brisket",
+          description: "Grilled marinated brisket",
           descriptionKr: "",
           price: "21.95",
         },
         {
           id: "ST5",
           name: "LA Style Ribs",
-          image: '',
+          image: "",
           nameKr: "LA 갈비",
-          description:
-            "Marinated korean BBQ short ribs",
+          description: "Marinated korean BBQ short ribs",
           descriptionKr: "",
           price: "19.95",
         },
@@ -403,7 +396,7 @@ export function Menu() {
           description: "Spicy korean chicken + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "18.95",
-       },
+        },
         {
           id: "C5",
           name: "Beef Bulgogi Combo",
@@ -533,7 +526,7 @@ export function Menu() {
           descriptionKr: "",
           price: "39.95",
         },
-        
+
         {
           id: "HP4",
           name: "Beef Bulgogi Hot Pot",
@@ -553,17 +546,17 @@ export function Menu() {
           descriptionKr: "",
           price: "28.95",
         },
-         {
+        {
           id: "HP6",
           name: "Brisket Hot Pot",
-          image: '',
+          image: "",
           nameKr: "자돌 전골",
           description:
             "Korean brisket + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
           descriptionKr: "",
           price: "31.95",
         },
-         {
+        {
           id: "HP7",
           image: "",
           name: "Pork Soybean Curd",
@@ -789,10 +782,10 @@ export function Menu() {
           price: "10.90",
         },
         {
-           id: "",
-           name: "Baekseju",
-           nameKr: "백세주",
-           price: "11.95",
+          id: "",
+          name: "Baekseju",
+          nameKr: "백세주",
+          price: "11.95",
         },
         {
           id: "",
