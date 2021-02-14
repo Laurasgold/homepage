@@ -583,23 +583,31 @@ export function Menu() {
         },
       ],
     },
-    // {
-    //   image: "",
-    //   title: "Bossam",
-    //   titleKr: "Steamed Pork Dish for 2-3",
-    //   note: "",
-    //   items: [
-    //     {
-    //       id: "",
-    //       name: "Bossam",
-    //       nameKr: "보쌈",
-    //       description:
-    //         "Steamed sliced pork belly + Sliced garlic + Assorted veggie wraps + Jalapeno + Shrimp sauce",
-    //       descriptionKr: "",
-    //       price: "29.50",
-    //     },
-    //   ],
-    // },
+    {
+      image: "",
+      title: "Bossam",
+      titleKr: "",
+      note: "Serves 2-3 people and comes with rice",
+      items: [
+        // {
+        //   id: "",
+        //   name: "Bossam",
+        //   nameKr: "보쌈",
+        //   description:
+        //     "Steamed sliced pork belly + Sliced garlic + Assorted veggie wraps + Jalapeno + Shrimp sauce",
+        //   descriptionKr: "",
+        //   price: "29.50",
+        // },
+        {
+          id: "I1",
+          name: "Grilled Intestines",
+          nameKr: "",
+          description: "",
+          descriptionKr: "",
+          price: "28.95",
+        },
+      ],
+    },
     {
       image: dubuSalad.childImageSharp.fluid,
       title: "Vegetarian",
