@@ -385,7 +385,7 @@ export function Menu() {
           id: "C3",
           name: "Marinated Crab Combo",
           nameKr: "양념게장 콤보",
-          description: "Marinated crab + Your choice of soft tofu soup",
+          description: "Marinated raw crab + Your choice of soft tofu soup",
           descriptionKr: "",
           price: "19.95",
         },
