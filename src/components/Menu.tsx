@@ -37,6 +37,7 @@ export function Menu() {
     gopjangSundubu,
     manduSundubu,
     seafoodSundubu,
+    grilledIntestines
     sundubu,
     nengkongKarlgugsu,
   } = useStaticQuery(graphql`
@@ -50,6 +51,14 @@ export function Menu() {
       }
       # Menu items
       bibimbap: file(relativePath: { eq: "menu/bibimbap.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      grilledIntestines: file(relativePath: { eq: "menu/grilled-intestines.jpeg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -256,16 +265,16 @@ export function Menu() {
           price: "12.90",
           image: gopjangSundubu.childImageSharp.fluid,
         },
-        {
-          id: "TS6",
-          name: "Seaweed Soft Tofu Soup",
-          nameKr: " 해초 순두부",
-          description:
-            "5 different kinds of seaweed, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "12.50",
-          image: "",
-        },
+        // {
+        //   id: "TS6",
+        //   name: "Seaweed Soft Tofu Soup",
+        //   nameKr: " 해초 순두부",
+        //   description:
+        //     "5 different kinds of seaweed, house made soft tofu, assorted vegetables, and kimchi",
+        //   descriptionKr: "",
+        //   price: "12.50",
+        //   image: "",
+        // },
         {
           id: "TS7",
           name: "Seafood Soft Tofu Soup",
@@ -356,6 +365,15 @@ export function Menu() {
           description: "Marinated korean BBQ short ribs",
           descriptionKr: "",
           price: "19.95",
+        },
+        {
+          id: "ST6",
+          name: "Grilled Roasted Intestines",
+          image: grilledIntestines,
+          nameKr: "",
+          description: "",
+          descriptionKr: "",
+          price: "28.95",
         },
       ],
     },
@@ -583,31 +601,24 @@ export function Menu() {
         },
       ],
     },
-    {
-      image: "",
-      title: "Bossam",
-      titleKr: "",
-      note: "Serves 2-3 people and comes with rice",
-      items: [
-        // {
-        //   id: "",
-        //   name: "Bossam",
-        //   nameKr: "보쌈",
-        //   description:
-        //     "Steamed sliced pork belly + Sliced garlic + Assorted veggie wraps + Jalapeno + Shrimp sauce",
-        //   descriptionKr: "",
-        //   price: "29.50",
-        // },
-        {
-          id: "I1",
-          name: "Grilled Intestines",
-          nameKr: "",
-          description: "",
-          descriptionKr: "",
-          price: "28.95",
-        },
-      ],
-    },
+    // {
+    //   image: "",
+    //   title: "Bossam",
+    //   titleKr: "",
+    //   note: "Serves 2-3 people and comes with rice",
+    //   items: [
+    //     // {
+    //     //   id: "",
+    //     //   name: "Bossam",
+    //     //   nameKr: "보쌈",
+    //     //   description:
+    //     //     "Steamed sliced pork belly + Sliced garlic + Assorted veggie wraps + Jalapeno + Shrimp sauce",
+    //     //   descriptionKr: "",
+    //     //   price: "29.50",
+    //     // },
+
+    //   ],
+    // },
     {
       image: dubuSalad.childImageSharp.fluid,
       title: "Vegetarian",
