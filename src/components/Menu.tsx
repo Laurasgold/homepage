@@ -37,7 +37,7 @@ export function Menu() {
     gopjangSundubu,
     manduSundubu,
     seafoodSundubu,
-    grilledIntestines
+    grilledIntestines,
     sundubu,
     nengkongKarlgugsu,
   } = useStaticQuery(graphql`
@@ -58,7 +58,9 @@ export function Menu() {
         }
       }
 
-      grilledIntestines: file(relativePath: { eq: "menu/grilled-intestines.jpeg" }) {
+      grilledIntestines: file(
+        relativePath: { eq: "menu/grilled-intestines.jpeg" }
+      ) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -651,15 +653,15 @@ export function Menu() {
           descriptionKr: "",
           price: "12.50",
         },
-        {
-          id: "V4",
-          name: "Vegetarian Seaweed Soft Tofu Soup",
-          nameKr: "해초 순두부",
-          description:
-            "Assorted seaweed, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "12.50",
-        },
+        // {
+        //   id: "V4",
+        //   name: "Vegetarian Seaweed Soft Tofu Soup",
+        //   nameKr: "해초 순두부",
+        //   description:
+        //     "Assorted seaweed, house made soft tofu, assorted vegetables, and kimchi",
+        //   descriptionKr: "",
+        //   price: "12.50",
+        // },
         {
           id: "V5",
           name: "Vegetable Soft Tofu Soup",
