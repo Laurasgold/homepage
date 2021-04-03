@@ -38,6 +38,8 @@ export function Menu() {
     manduSundubu,
     seafoodSundubu,
     grilledIntestines,
+    crab,
+    yellowPollock,
     sundubu,
     nengkongKarlgugsu,
   } = useStaticQuery(graphql`
@@ -61,6 +63,22 @@ export function Menu() {
       grilledIntestines: file(
         relativePath: { eq: "menu/grilled-intestines.jpeg" }
       ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      crab: file(relativePath: { eq: "menu/crab.jpeg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      yellowPollock: file(relativePath: { eq: "menu/yellow-pollock.jpeg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -403,6 +421,7 @@ export function Menu() {
         },
         {
           id: "C3",
+          image: crab,
           name: "Marinated Crab Combo",
           nameKr: "양념게장 콤보",
           description: "Marinated raw crab + Your choice of soft tofu soup",
@@ -428,6 +447,7 @@ export function Menu() {
         },
         {
           id: "C6",
+          image: yellowPollock,
           name: "Yellow Pollack Combo",
           nameKr: "황태구이 콤보",
           description: "Grilled yellow pollack + Your choice of soft tofu soup",
