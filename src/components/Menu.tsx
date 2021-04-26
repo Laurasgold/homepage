@@ -628,6 +628,31 @@ export function Menu() {
           descriptionKr: "",
           price: "16.50",
         },
+        {
+          id: "N2",
+          name: "Cold Noodle Soup",
+          nameKr: "물냉면",
+          description:
+            "Cold noodles served in a chilled broth made from beef and/or Korean radish water kimchi",
+          descriptionKr: "",
+          price: "",
+        },
+        {
+          id: "N3",
+          name: "Spicy Cold Noodles",
+          nameKr: "비빔냉면",
+          description: "Cold buckwheat noodles mixed with a spicy sauce",
+          descriptionKr: "",
+          price: "",
+        },
+        {
+          id: "N4",
+          name: "Cold soy milk noodle soup",
+          nameKr: "콩국수",
+          description: "Seasonal noodle dish served in a cold soy milk broth",
+          descriptionKr: "",
+          price: "",
+        },
       ],
     },
     // {
