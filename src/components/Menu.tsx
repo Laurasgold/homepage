@@ -272,7 +272,7 @@ export function Menu() {
           description:
             "Oyster, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
-          price: "12.90",
+          price: "13.90",
           image: "",
         },
         {
@@ -296,17 +296,17 @@ export function Menu() {
         //   image: "",
         // },
         {
-          id: "TS7",
+          id: "TS6",
           name: "Seafood Soft Tofu Soup",
           nameKr: "해물 순두부",
           description:
             "Seafood medley (clam, mussell, shrimp, calimari), house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
-          price: "12.90",
+          price: "13.90",
           image: "",
         },
         {
-          id: "TS8",
+          id: "TS7",
           name: "Kimchi Soft Tofu Soup",
           nameKr: "김치 순두부",
           description:
@@ -316,23 +316,23 @@ export function Menu() {
           image: "",
         },
         {
-          id: "TS9",
+          id: "TS8",
           name: "Traditional Plain Soft Tofu Soup",
           nameKr: "초당 순두부",
           description:
             "Fresh house made soft tofu and soy bean sauce (not spicy)",
           descriptionKr: "",
-          price: "11.50",
+          price: "12.50",
           image: cheodangSundubu.childImageSharp.fluid,
         },
         {
-          id: "TS10",
+          id: "TS9",
           name: "Ham & Sausage Tofu Soup",
           nameKr: "햄, 소세지 순두부",
           description:
             "Ham, sausage, house made soft tofu, assorted vegetables, and kimchi",
           descriptionKr: "",
-          price: "12.90",
+          price: "12.50",
           image: "",
         },
       ],
@@ -364,7 +364,7 @@ export function Menu() {
           id: "ST3",
           name: "Grilled Spicy Intestines",
           nameKr: "매운곱창볶음",
-          description: "Marinated beef intestines",
+          description: "Marinated spicy beef intestines",
           descriptionKr: "",
           price: "19.95",
         },
@@ -388,10 +388,10 @@ export function Menu() {
         },
         {
           id: "ST6",
-          name: "Grilled Roasted Intestines",
+          name: "Intestine Roast",
           image: grilledIntestines,
           nameKr: "",
-          description: "",
+          description: "Roasted intesting served on a grill",
           descriptionKr: "",
           price: "28.95",
         },
@@ -399,7 +399,7 @@ export function Menu() {
     },
     {
       image: sundubu.childImageSharp.fluid,
-      title: "Tofu Soup Combo",
+      title: "Combo",
       titleKr: "순두부 콤보",
       note: "Comes with a serving of stone pot rice",
       items: [
@@ -407,24 +407,27 @@ export function Menu() {
           id: "C1",
           name: "Marinated Back-Ribs Combo",
           nameKr: "돼지갈비콤보",
-          description: "Marinated back ribs + Your choice of soft tofu soup",
+          description:
+            "Marinated back ribs + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
-          price: "18.95",
+          price: "19.95",
         },
         {
           id: "C2",
           name: "LA Style Ribs Combo",
           nameKr: "LA 갈비 콤보",
-          description: "LA style ribs + Your choice of soft tofu soup",
+          description:
+            "LA style ribs + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
-          price: "19.95",
+          price: "21.95",
         },
         {
           id: "C3",
           image: crab,
           name: "Marinated Crab Combo",
           nameKr: "양념게장 콤보",
-          description: "Marinated raw crab + Your choice of soft tofu soup",
+          description:
+            "Marinated spicy raw crab + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
           price: "19.95",
         },
@@ -432,34 +435,36 @@ export function Menu() {
           id: "C4",
           name: "Spicy Korean Chicken Combo",
           nameKr: "닭 불고기 콤보",
-          description: "Spicy korean chicken + Your choice of soft tofu soup",
+          description:
+            "Spicy korean chicken + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
-          price: "18.95",
+          price: "19.95",
         },
         {
           id: "C5",
           name: "Beef Bulgogi Combo",
           nameKr: "소불고기 콤보",
           description:
-            "Korean BBQ style beef bulgogi + Your choice of soft tofu soup",
+            "Korean BBQ style beef bulgogi + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
-          price: "19.95",
+          price: "21.95",
         },
         {
           id: "C6",
           image: yellowPollock,
           name: "Yellow Pollack Combo",
           nameKr: "황태구이 콤보",
-          description: "Grilled yellow pollack + Your choice of soft tofu soup",
+          description:
+            "Grilled yellow pollack + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
-          price: "18.95",
+          price: "19.95",
         },
         {
           id: "C7",
           name: "Spicy Pork Combo",
           nameKr: "돼지불고기 콤보 ",
           description:
-            " Korean BBQ style spicy pork + Your choice of soft tofu soup",
+            " Korean BBQ style spicy pork + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
           price: "19.95",
         },
@@ -467,7 +472,8 @@ export function Menu() {
           id: "C8",
           name: "Intestine Combo",
           nameKr: "곱창 콤보",
-          description: " Grilled Intestine + Your choice of soft tofu soup",
+          description:
+            " Grilled Intestine + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
           price: "21.95",
         },
@@ -475,7 +481,8 @@ export function Menu() {
           id: "C9",
           name: "Brisket Combo",
           nameKr: "차돌 콤보",
-          description: "Marinated brisket + Your choice of soft tofu soup",
+          description:
+            "Marinated brisket + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
           price: "21.95",
         },
