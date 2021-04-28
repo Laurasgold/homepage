@@ -384,7 +384,7 @@ export function Menu() {
           nameKr: "LA 갈비",
           description: "Marinated korean BBQ short ribs",
           descriptionKr: "",
-          price: "19.95",
+          price: "22.95",
         },
         {
           id: "ST6",
@@ -419,7 +419,7 @@ export function Menu() {
           description:
             "LA style ribs + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
-          price: "21.95",
+          price: "22.95",
         },
         {
           id: "C3",
