@@ -385,7 +385,7 @@ export function Menu() {
           nameKr: "LA 갈비",
           description: "Marinated korean BBQ short ribs",
           descriptionKr: "",
-          price: "19.95",
+          price: "22.95",
         },
         {
           id: "ST6",
@@ -420,7 +420,7 @@ export function Menu() {
           description:
             "LA style ribs + Your choice of soft tofu soup or noodles",
           descriptionKr: "",
-          price: "21.95",
+          price: "22.95",
         },
         {
           id: "C3",
@@ -636,7 +636,7 @@ export function Menu() {
           description:
             "Cold noodles served in a chilled broth made from beef and/or Korean radish water kimchi",
           descriptionKr: "",
-          price: "13.50",
+          price: "11.50",
         },
         {
           id: "N3",
@@ -644,7 +644,7 @@ export function Menu() {
           nameKr: "비빔냉면",
           description: "Cold buckwheat noodles mixed with a spicy sauce",
           descriptionKr: "",
-          price: "13.50",
+          price: "11.50",
         },
         {
           id: "N4",
@@ -652,7 +652,7 @@ export function Menu() {
           nameKr: "콩국수",
           description: "Seasonal noodle dish served in a cold soy milk broth",
           descriptionKr: "",
-          price: "13.50",
+          price: "11.50",
         },
       ],
     },
