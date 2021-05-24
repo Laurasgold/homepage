@@ -22,8 +22,8 @@ export default function MenuPage({ location }) {
           <Hr />
           <p>
             Made by{" "}
-            <a href="https://codemymenu.com" target="_blank">
-              codemymenu.com
+            <a href="https://purefunc.io" target="_blank">
+              Pure Func
             </a>
           </p>
         </div>

@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import Modal from "./Modal"
 import Icon from "./Icon"
+import { Accordion } from "./Accordion"
 
 type Item = {
   id?: string
@@ -187,7 +188,7 @@ export function Menu() {
 
   const foods: MenuItem[] = [
     {
-      image: heroImg.childImageSharp.fluid,
+      image: "",
       title: "Appetizer",
       titleKr: "",
       note: "",
@@ -905,71 +906,74 @@ export function Menu() {
 
   return (
     <>
-      <MenuList>
+      <Img fluid={heroImg.childImageSharp.fluid} alt="The Stone Tofu" />
+      <MenuList className="margins">
         {foods.map((food, i) => (
-          <li className="food-category" key={food.title}>
-            {food.image && (
-              <Img
-                fluid={food.image}
-                alt={food.title}
-                style={{ marginTop: "var(--baseMargin)" }}
-              />
-            )}
-            <h3 className="food-title">
-              {i + 1}. {food.title} {food.titleKr && `(${food.titleKr})`}
-            </h3>
-            {food.note && <p className="note">- {food.note}</p>}
-            <ul>
-              {food.items.map(item => (
-                <li key={item.id} className="food-item">
-                  <div>
-                    <h5 className="food-name">
-                      {item.id && item.id + "."}{" "}
-                      {item.nameKr && item.nameKr + ":"} {item.name}{" "}
-                      {item.image && (
-                        <Icon
-                          name="image"
-                          onClick={
-                            item.image ? () => setModalImage(item.image) : null
-                          }
-                          color="var(--red)"
-                          style={{
-                            margin: "0 0 -2px var(--halfMargin)",
-                            cursor: "pointer",
-                          }}
-                        />
-                      )}
-                    </h5>
-                    <p>{item.description}</p>
-                  </div>
-                  <h5 className="price">${item.price}</h5>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
+          <Accordion
+            title={`${i + 1}. ${food.title} ${
+              food.titleKr && `(${food.titleKr})`
+            }`}
+          >
+            <li className="food-category" key={food.title}>
+              {food.image && <Img fluid={food.image} alt={food.title} />}
 
-        <h3 className="food-title">{foods.length + 1}. Beverages</h3>
-        {beverageandDeserts.map(food => (
-          <li className="food-category" key={food.title}>
-            <h5 className="beverage-title">
-              {food.title} {food.titleKr && `(${food.titleKr})`}
-            </h5>
-            {food.items && (
+              {food.note && <p className="note">- {food.note}</p>}
               <ul>
                 {food.items.map(item => (
-                  <li key={item.id} className="beverage-item">
-                    <p className="beverage-name">
-                      {item.id && item.id + "."}{" "}
-                      {item.nameKr && item.nameKr + ":"} {item.name}
-                    </p>
-                    {item.price && <h5 className="price">${item.price}</h5>}
+                  <li key={item.id} className="food-item">
+                    <div>
+                      <h5 className="food-name">
+                        {item.id && item.id + "."}{" "}
+                        {item.nameKr && item.nameKr + ":"} {item.name}{" "}
+                        {item.image && (
+                          <Icon
+                            name="image"
+                            onClick={
+                              item.image
+                                ? () => setModalImage(item.image)
+                                : null
+                            }
+                            color="var(--red)"
+                            style={{
+                              margin: "0 0 -2px var(--halfMargin)",
+                              cursor: "pointer",
+                            }}
+                          />
+                        )}
+                      </h5>
+                      <p>{item.description}</p>
+                    </div>
+                    <h5 className="price">${item.price}</h5>
                   </li>
                 ))}
               </ul>
-            )}
-          </li>
+            </li>
+          </Accordion>
         ))}
+        <Accordion title={`${foods.length + 1}. Beverages`}>
+          <div>
+            {beverageandDeserts.map(food => (
+              <li className="food-category" key={food.title}>
+                <h5 className="beverage-title">
+                  {food.title} {food.titleKr && `(${food.titleKr})`}
+                </h5>
+                {food.items && (
+                  <ul>
+                    {food.items.map(item => (
+                      <li key={item.id} className="beverage-item">
+                        <p className="beverage-name">
+                          {item.id && item.id + "."}{" "}
+                          {item.nameKr && item.nameKr + ":"} {item.name}
+                        </p>
+                        {item.price && <h5 className="price">${item.price}</h5>}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </div>
+        </Accordion>
       </MenuList>
       <Modal isActive={!!modalImage} closeAction={() => setModalImage("")}>
         {modalImage && <Img fluid={modalImage} />}
@@ -985,6 +989,9 @@ const MenuList = styled.ol`
     color: var(--black);
     margin-bottom: 0;
   }
+  .food-category {
+    padding: var(--cardPadding);
+  }
   .note {
     font-size: small;
     font-style: italic;
@@ -994,7 +1001,7 @@ const MenuList = styled.ol`
   .beverage-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0;
+    margin: 0;
     .food-name {
       color: var(--black);
       margin-bottom: 0.5rem;
