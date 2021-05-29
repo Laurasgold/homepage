@@ -422,16 +422,16 @@ export function Menu() {
           descriptionKr: "",
           price: "22.95",
         },
-        {
-          id: "C3",
-          image: crab,
-          name: "Marinated Crab Combo",
-          nameKr: "양념게장 콤보",
-          description:
-            "Marinated spicy raw crab + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "19.95",
-        },
+        // {
+        //   id: "C3",
+        //   image: crab,
+        //   name: "Marinated Crab Combo",
+        //   nameKr: "양념게장 콤보",
+        //   description:
+        //     "Marinated spicy raw crab + Your choice of soft tofu soup or noodles",
+        //   descriptionKr: "",
+        //   price: "19.95",
+        // },
         {
           id: "C4",
           name: "Spicy Korean Chicken Combo",
