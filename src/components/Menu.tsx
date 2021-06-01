@@ -404,15 +404,15 @@ export function Menu() {
       titleKr: "순두부 콤보",
       note: "Comes with a serving of stone pot rice",
       items: [
-        {
-          id: "C1",
-          name: "Marinated Back-Ribs Combo",
-          nameKr: "돼지갈비콤보",
-          description:
-            "Marinated back ribs + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "19.95",
-        },
+        // {
+        //   id: "C1",
+        //   name: "Marinated Back-Ribs Combo",
+        //   nameKr: "돼지갈비콤보",
+        //   description:
+        //     "Marinated back ribs + Your choice of soft tofu soup or noodles",
+        //   descriptionKr: "",
+        //   price: "19.95",
+        // },
         {
           id: "C2",
           name: "LA Style Ribs Combo",
