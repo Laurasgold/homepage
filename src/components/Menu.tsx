@@ -1,9 +1,10 @@
-import React, { useState } from "react"
+import React, { Key, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import Modal from "./Modal"
 import Icon from "./Icon"
+// import { MenuKey, keyItems } from "./MenuKey"
 import { Accordion } from "./Accordion"
 
 type Item = {
@@ -316,16 +317,16 @@ export function Menu() {
           price: "12.50",
           image: "",
         },
-        {
-          id: "TS8",
-          name: "Traditional Plain Soft Tofu Soup",
-          nameKr: "초당 순두부",
-          description:
-            "Fresh house made soft tofu and soy bean sauce (not spicy)",
-          descriptionKr: "",
-          price: "12.50",
-          image: cheodangSundubu.childImageSharp.fluid,
-        },
+        // {
+        //   id: "TS8",
+        //   name: "Traditional Plain Soft Tofu Soup",
+        //   nameKr: "초당 순두부",
+        //   description:
+        //     "Fresh house made soft tofu and soy bean sauce (not spicy)",
+        //   descriptionKr: "",
+        //   price: "12.50",
+        //   image: cheodangSundubu.childImageSharp.fluid,
+        // },
         {
           id: "TS9",
           name: "Ham & Sausage Tofu Soup",
@@ -373,7 +374,7 @@ export function Menu() {
           id: "ST4",
           name: "Grilled Brisket",
           image: "",
-          nameKr: "차돌볶음",
+          nameKr: "차돌박이불고기",
           description: "Grilled marinated brisket",
           descriptionKr: "",
           price: "21.95",
@@ -974,6 +975,7 @@ export function Menu() {
             ))}
           </div>
         </Accordion>
+        {/* <MenuKey /> */}
       </MenuList>
       <Modal isActive={!!modalImage} closeAction={() => setModalImage("")}>
         {modalImage && <Img fluid={modalImage} />}
