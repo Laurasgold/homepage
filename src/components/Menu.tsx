@@ -343,7 +343,7 @@ export function Menu() {
       image: "",
       title: "Special Traditional",
       titleKr: "",
-      note: "Serves 1-2 people and comes with rice",
+      note: "Serves 1 person and comes with rice",
       items: [
         {
           id: "ST1",
@@ -546,7 +546,7 @@ export function Menu() {
       image: seafoodSundubu.childImageSharp.fluid,
       title: "Tofu Hot pot",
       titleKr: "전골",
-      note: "Serves 2-3 people and comes with rice",
+      note: "Serves 1-2 people and comes with rice",
       items: [
         {
           id: "HP1",
@@ -599,7 +599,7 @@ export function Menu() {
           id: "HP6",
           name: "Brisket Hot Pot",
           image: "",
-          nameKr: "자돌 전골",
+          nameKr: "차돌 전골",
           description:
             "Korean brisket + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
           descriptionKr: "",
