@@ -550,28 +550,28 @@ export function Menu() {
       items: [
         {
           id: "HP1",
-          name: "Soft Tofu Dumpling Hot Pot",
+          name: "Tofu Dumpling Hot Pot",
           nameKr: "순두부 만두 전골",
           description:
-            "House made soft tofu + Pork dumplings + Assorted vegetables + Kimchi",
+            "House made tofu + Pork dumplings + Assorted vegetables + Kimchi",
           descriptionKr: "",
           price: "29.95",
         },
         {
           id: "HP2",
-          name: "Soft Tofu intestine Hot Pot",
+          name: "Tofu intestine Hot Pot",
           nameKr: "순두부 내장 전골",
           description:
-            "House made soft tofu + Mushroom medley + Assorted vegetables + Intestine",
+            "House made tofu + Mushroom medley + Assorted vegetables + Intestine",
           descriptionKr: "",
           price: "32.95",
         },
         {
           id: "HP3",
-          name: "Soft Tofu Seafood Hot Pot",
+          name: "Tofu Seafood Hot Pot",
           nameKr: "순두부 해물전골 ",
           description:
-            "House made soft tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more)",
+            "House made tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more)",
           descriptionKr: "",
           price: "39.95",
         },
