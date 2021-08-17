@@ -551,7 +551,7 @@ export function Menu() {
         {
           id: "HP1",
           name: "Tofu Dumpling Hot Pot",
-          nameKr: "순두부 만두 전골",
+          nameKr: "두부 만두 전골",
           description:
             "House made tofu + Pork dumplings + Assorted vegetables + Kimchi",
           descriptionKr: "",
@@ -560,7 +560,7 @@ export function Menu() {
         {
           id: "HP2",
           name: "Tofu intestine Hot Pot",
-          nameKr: "순두부 내장 전골",
+          nameKr: "두부 내장 전골",
           description:
             "House made tofu + Mushroom medley + Assorted vegetables + Intestine",
           descriptionKr: "",
@@ -569,7 +569,7 @@ export function Menu() {
         {
           id: "HP3",
           name: "Tofu Seafood Hot Pot",
-          nameKr: "순두부 해물전골 ",
+          nameKr: "두부 해물전골 ",
           description:
             "House made tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more)",
           descriptionKr: "",
@@ -591,7 +591,7 @@ export function Menu() {
           image: porkTraditional.childImageSharp.fluid,
           nameKr: "매운 돼지 불고기",
           description:
-            "Korean BBQ style marinated pork + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
+            "Korean BBQ style marinated pork + broth + mushrooms + noodles + assorted vegetables in a large pot",
           descriptionKr: "",
           price: "28.95",
         },
@@ -601,7 +601,7 @@ export function Menu() {
           image: "",
           nameKr: "차돌 전골",
           description:
-            "Korean brisket + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
+            "Korean brisket + broth + mushrooms + noodles + assorted vegetables in a large pot",
           descriptionKr: "",
           price: "31.95",
         },
