@@ -1,0 +1,6 @@
+id,name,name_kr,description,description_kr,price,image,category_title,category_title_kr,category_note,category_image
+B1,Beef Bulgogi Bibimbap,소불고기 돌솥,Marinated korean BBQ style bulgogi beef and assorted veggies,,14.95,beefBibimbap,Stone Bibim Bap,돌솔 비빔밥,Served on a searing hot stone bowl with soybean paste soup,dorsolBibimbap
+B2,Fresh Tofu Bibimbap,순두부 돌솥,House made tofu and assorted veggies,,13.95,,,,,
+B3,Kimchi Bibimbap,김치 돌솥,Kimchi and assorted veggies,,13.95,,,,,
+B4,Spicy Pork Bulgogi Bibimbap,매운 돼지 불고기 돌솥,Korean BBQ style spicy pork bulgogi and assorted veggies,,14.95,porkBibimbap,,,,
+B5,Seaweed Salad Bibimbap,해초 돌솥,Assorted veggies and seaweeds,,14.95,,,,,

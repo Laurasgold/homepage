@@ -1,64 +1,43 @@
 import React, { Key, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Modal from "./Modal"
 import Icon from "./Icon"
 // import { MenuKey, keyItems } from "./MenuKey"
 import { Accordion } from "./Accordion"
 
 type Item = {
-  id?: string
+  id: string
   name: string
-  nameKr?: string
+  name_kr?: string
   description?: string
-  descriptionKr?: string
+  description_kr?: string
   price: string
   image?: string
 }
 
 type MenuItem = {
-  image?: string
-  title: string
-  titleKr?: string
-  note?: string
+  category_image?: string
+  category_title: string
+  category_title_kr?: string
+  category_note?: string
+  category_price?: string
   items?: Item[]
 }
 
 export function Menu() {
-  const {
-    heroImg,
-    bibimbap,
-    beefBibimbap,
-    porkBibimbap,
-    porkTraditional,
-    dorsolBibimbap,
-    dubuSalad,
-    cheodangSundubu,
-    dwenjangSundubu,
-    gopjangSundubu,
-    manduSundubu,
-    seafoodSundubu,
-    grilledIntestines,
-    crab,
-    yellowPollock,
-    sundubu,
-    nengkongKarlgugsu,
-  } = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       heroImg: file(relativePath: { eq: "stone-img.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 1440, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       # Menu items
       bibimbap: file(relativePath: { eq: "menu/bibimbap.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
 
@@ -66,25 +45,19 @@ export function Menu() {
         relativePath: { eq: "menu/grilled-intestines.jpeg" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
 
       crab: file(relativePath: { eq: "menu/crab.jpeg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
 
       yellowPollock: file(relativePath: { eq: "menu/yellow-pollock.jpeg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
 
@@ -92,9 +65,7 @@ export function Menu() {
         relativePath: { eq: "menu/beef-bulgulgi-bibimbap.jpeg" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
 
@@ -102,9 +73,7 @@ export function Menu() {
         relativePath: { eq: "menu/spicy-pork-bibimbap.jpeg" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
 
@@ -112,820 +81,321 @@ export function Menu() {
         relativePath: { eq: "menu/spicy-pork-traditional.jpeg" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData
         }
       }
       cheodangSundubu: file(relativePath: { eq: "menu/cheodang-sundubu.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       dorsolBibimbap: file(relativePath: { eq: "menu/dorsol-bibimbap.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       dubuSalad: file(relativePath: { eq: "menu/dubu-salad.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       dwenjangSundubu: file(relativePath: { eq: "menu/dwenjang-sundubu.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       gopjangSundubu: file(relativePath: { eq: "menu/gopjang-sundubu.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData
         }
       }
       manduSundubu: file(relativePath: { eq: "menu/mandu-sundubu.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       nengkongKarlgugsu: file(
         relativePath: { eq: "menu/nengkong-kargugsu.jpg" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       seafoodSundubu: file(
         relativePath: { eq: "menu/seafood-sundubu-jungle.jpg" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       sundubu: file(relativePath: { eq: "menu/sundubu.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      # Categories
+      allComboCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name_kr
+          name
+          price
+        }
+      }
+      allNoodlesCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name
+          name_kr
+          price
+        }
+      }
+      allSpecialTraditionalCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name
+          name_kr
+          price
+        }
+      }
+      allStoneBibimBapCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name
+          name_kr
+          price
+        }
+      }
+      allTofuHotPotCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name
+          name_kr
+          price
+        }
+      }
+      allTofuSoupCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name_kr
+          name
+          price
+        }
+      }
+      allVegetarianCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name
+          name_kr
+          price
+        }
+      }
+      allAppetizerCsv {
+        nodes {
+          category_image
+          category_note
+          category_title
+          category_title_kr
+          description
+          description_kr
+          id
+          image
+          name
+          name_kr
+          price
+        }
+      }
+      allLiquorCsv {
+        nodes {
+          category_image
+          category_price
+          category_title
+          category_title_kr
+          id
+          image
+          name
+          price
+          name_kr
+        }
+      }
+      allPepsiProductsCsv {
+        nodes {
+          category_image
+          category_price
+          category_title
+          category_title_kr
+          image
+          id
+          name_kr
+          name
+          price
         }
       }
     }
   `)
 
-  const foods: MenuItem[] = [
+  const foodCategories: MenuItem[] = [
     {
-      image: "",
-      title: "Appetizer",
-      titleKr: "",
-      note: "",
-      items: [
-        //   {
-        //     id: "A-1",
-        //     name: "Bean Curd Korean Pancake",
-        //     nameKr: "콩비지전",
-        //    description:
-        //       "Ground bean curd pancake with chopped cabbage, seafood, and green onion",
-        //     descriptionKr: "",
-        //    price: "11.50",
-        //   },
-        {
-          id: "A-2",
-          name: "Fresh Soft Tofu Salad",
-          nameKr: "순두부 샐러드",
-          description:
-            "Fresh mixed greens topped with housemade tofu and our special melon soy salad dressing",
-          descriptionKr: "",
-          price: "11.50",
-        },
-        {
-          id: "A-3",
-          name: "Sesame Oil Fried Tofu",
-          nameKr: "들기름 두부 구이",
-          description:
-            "Grilled fresh tofu with wild sesame oil and homemade soysauce",
-          descriptionKr: "",
-          price: "11.50",
-        },
-        {
-          id: "A-4",
-          name: "Mung Bean Pancake",
-          nameKr: "빈대떡",
-          description: "Mung bean, cabbage, and green onions",
-          descriptionKr: "",
-          price: "11.50",
-        },
-      ],
+      category_image: data.allAppetizerCsv.nodes[0]?.category_image,
+      category_note: data.allAppetizerCsv.nodes[0]?.category_note,
+      category_title: data.allAppetizerCsv.nodes[0]?.category_title,
+      category_title_kr: data.allAppetizerCsv.nodes[0]?.category_title_kr,
+      items: data.allAppetizerCsv.nodes,
     },
     {
-      image: "",
-      title: "Tofu Soup",
-      titleKr: "순두부",
-      note: "Comes with a serving of stone pot rice",
-      items: [
-        {
-          id: "TS1",
-          name: "Dumpling Soft Tofu Soup",
-          nameKr: "만두 순두부",
-          description:
-            "Pork dumplings, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "12.50",
-          image: manduSundubu.childImageSharp.fluid,
-        },
-        {
-          id: "TS2",
-          name: "Korean Miso Soft Tofu Soup",
-          nameKr: "된장 순두부",
-          description:
-            "Korean miso broth, house made soft tofu, assorted vegetables, mussels, and clams",
-          descriptionKr: "",
-          price: "12.50",
-          image: dwenjangSundubu.childImageSharp.fluid,
-        },
-        {
-          id: "TS3",
-          name: "Beef Soft Tofu Soup",
-          nameKr: "소고기 순두부",
-          description:
-            "Premium beef, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "12.90",
-          image: "",
-        },
-        {
-          id: "TS4",
-          name: "Oyster Soft Tofu Soup",
-          nameKr: "굴 순두부",
-          description:
-            "Oyster, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "13.90",
-          image: "",
-        },
-        {
-          id: "TS5",
-          name: "Intestine Soft Tofu Soup",
-          nameKr: "내장 순두부",
-          description:
-            "Intestine, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "12.90",
-          image: gopjangSundubu.childImageSharp.fluid,
-        },
-        // {
-        //   id: "TS6",
-        //   name: "Seaweed Soft Tofu Soup",
-        //   nameKr: " 해초 순두부",
-        //   description:
-        //     "5 different kinds of seaweed, house made soft tofu, assorted vegetables, and kimchi",
-        //   descriptionKr: "",
-        //   price: "12.50",
-        //   image: "",
-        // },
-        {
-          id: "TS6",
-          name: "Seafood Soft Tofu Soup",
-          nameKr: "해물 순두부",
-          description:
-            "Seafood medley (clam, mussell, shrimp, calimari), house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "13.90",
-          image: "",
-        },
-        {
-          id: "TS7",
-          name: "Kimchi Soft Tofu Soup",
-          nameKr: "김치 순두부",
-          description:
-            "Pork, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "12.50",
-          image: "",
-        },
-        // {
-        //   id: "TS8",
-        //   name: "Traditional Plain Soft Tofu Soup",
-        //   nameKr: "초당 순두부",
-        //   description:
-        //     "Fresh house made soft tofu and soy bean sauce (not spicy)",
-        //   descriptionKr: "",
-        //   price: "12.50",
-        //   image: cheodangSundubu.childImageSharp.fluid,
-        // },
-        {
-          id: "TS9",
-          name: "Ham & Sausage Tofu Soup",
-          nameKr: "햄, 소세지 순두부",
-          description:
-            "Ham, sausage, house made soft tofu, assorted vegetables, and kimchi",
-          descriptionKr: "",
-          price: "12.50",
-          image: "",
-        },
-      ],
+      category_image: data.allTofuSoupCsv.nodes[0]?.category_image,
+      category_note: data.allTofuSoupCsv.nodes[0]?.category_note,
+      category_title: data.allTofuSoupCsv.nodes[0]?.category_title,
+      category_title_kr: data.allTofuSoupCsv.nodes[0]?.category_title_kr,
+      items: data.allTofuSoupCsv.nodes,
     },
     {
-      image: "",
-      title: "Special Traditional",
-      titleKr: "",
-      note: "Serves 1 person and comes with rice",
-      items: [
-        {
-          id: "ST1",
-          name: "Beef Bulgogi",
-          nameKr: "소불고기",
-          description: "Korean BBQ style marinated ribeye beef",
-          descriptionKr: "",
-          price: "19.95",
-        },
-        {
-          id: "ST2",
-          name: "Spicy Pork Bulgogi",
-          image: "",
-          nameKr: "매운 돼지 불고기",
-          description: "Korean BBQ style marinated spicy pork",
-          descriptionKr: "",
-          price: "19.95",
-        },
-        {
-          id: "ST3",
-          name: "Grilled Spicy Intestines",
-          nameKr: "매운곱창볶음",
-          description: "Marinated spicy beef intestines",
-          descriptionKr: "",
-          price: "19.95",
-        },
-        {
-          id: "ST4",
-          name: "Grilled Brisket",
-          image: "",
-          nameKr: "차돌박이불고기",
-          description: "Grilled marinated brisket",
-          descriptionKr: "",
-          price: "21.95",
-        },
-        {
-          id: "ST5",
-          name: "LA Style Ribs",
-          image: "",
-          nameKr: "LA 갈비",
-          description: "Marinated korean BBQ short ribs",
-          descriptionKr: "",
-          price: "22.95",
-        },
-        {
-          id: "ST6",
-          name: "Intestine Roast",
-          image: grilledIntestines,
-          nameKr: "",
-          description: "Roasted intesting served on a grill",
-          descriptionKr: "",
-          price: "28.95",
-        },
-      ],
+      category_image: data.allSpecialTraditionalCsv.nodes[0]?.category_image,
+      category_title: data.allSpecialTraditionalCsv.nodes[0]?.category_title,
+      category_note: data.allSpecialTraditionalCsv.nodes[0]?.category_note,
+      category_title_kr:
+        data.allSpecialTraditionalCsv.nodes[0]?.category_title_kr,
+      items: data.allSpecialTraditionalCsv.nodes,
     },
     {
-      image: sundubu.childImageSharp.fluid,
-      title: "Combo",
-      titleKr: "순두부 콤보",
-      note: "Comes with a serving of stone pot rice",
-      items: [
-        // {
-        //   id: "C1",
-        //   name: "Marinated Back-Ribs Combo",
-        //   nameKr: "돼지갈비콤보",
-        //   description:
-        //     "Marinated back ribs + Your choice of soft tofu soup or noodles",
-        //   descriptionKr: "",
-        //   price: "19.95",
-        // },
-        {
-          id: "C2",
-          name: "LA Style Ribs Combo",
-          nameKr: "LA 갈비 콤보",
-          description:
-            "LA style ribs + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "22.95",
-        },
-        // {
-        //   id: "C3",
-        //   image: crab,
-        //   name: "Marinated Crab Combo",
-        //   nameKr: "양념게장 콤보",
-        //   description:
-        //     "Marinated spicy raw crab + Your choice of soft tofu soup or noodles",
-        //   descriptionKr: "",
-        //   price: "19.95",
-        // },
-        {
-          id: "C4",
-          name: "Spicy Korean Chicken Combo",
-          nameKr: "닭 불고기 콤보",
-          description:
-            "Spicy korean chicken + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "19.95",
-        },
-        {
-          id: "C5",
-          name: "Beef Bulgogi Combo",
-          nameKr: "소불고기 콤보",
-          description:
-            "Korean BBQ style beef bulgogi + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "21.95",
-        },
-        {
-          id: "C6",
-          image: yellowPollock,
-          name: "Yellow Pollack Combo",
-          nameKr: "황태구이 콤보",
-          description:
-            "Grilled yellow pollack + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "19.95",
-        },
-        {
-          id: "C7",
-          name: "Spicy Pork Combo",
-          nameKr: "돼지불고기 콤보 ",
-          description:
-            " Korean BBQ style spicy pork + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "19.95",
-        },
-        {
-          id: "C8",
-          name: "Intestine Combo",
-          nameKr: "곱창 콤보",
-          description:
-            " Grilled Intestine + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "21.95",
-        },
-        {
-          id: "C9",
-          name: "Brisket Combo",
-          nameKr: "차돌 콤보",
-          description:
-            "Marinated brisket + Your choice of soft tofu soup or noodles",
-          descriptionKr: "",
-          price: "21.95",
-        },
-      ],
+      category_image: data.allComboCsv.nodes[0]?.category_image,
+      category_note: data.allComboCsv.nodes[0]?.category_note,
+      category_title: data.allComboCsv.nodes[0]?.category_title,
+      category_title_kr: data.allComboCsv.nodes[0]?.category_title_kr,
+      items: data.allComboCsv.nodes,
     },
     {
-      image: dorsolBibimbap.childImageSharp.fluid,
-      title: "Stone Bibim Bap",
-      titleKr: "돌솥 비빔밥",
-      note: "Served on a searing hot stone bowl with soybean paste soup",
-      items: [
-        {
-          id: "B1",
-          image: beefBibimbap.childImageSharp.fluid,
-          name: "Beef Bulgogi Bibimbap",
-          nameKr: "소불고기 돌솥",
-          description:
-            "Marinated korean BBQ style bulgogi beef and assorted veggies",
-          descriptionKr: "",
-          price: "14.95",
-        },
-        {
-          id: "B2",
-          name: "Fresh Tofu Bibimbap",
-          nameKr: "순두부 돌솥",
-          description: "House made tofu and assorted veggies",
-          descriptionKr: "",
-          price: "13.95",
-        },
-        {
-          id: "B3",
-          name: "Kimchi Bibimbap",
-          nameKr: "김치 돌솥",
-          description: "Kimchi and assorted veggies",
-          descriptionKr: "",
-          price: "13.95",
-        },
-        {
-          id: "B4",
-          image: porkBibimbap.childImageSharp.fluid,
-          name: "Spicy Pork Bulgogi Bibimbap",
-          nameKr: "매운 돼지 불고기 돌솥",
-          description:
-            "Korean BBQ style spicy pork bulgogi and assorted veggies",
-          descriptionKr: "",
-          price: "14.95",
-        },
-        {
-          id: "B5",
-          name: "Seaweed Salad Bibimbap",
-          nameKr: "해초 돌솥",
-          description: "Assorted veggies and seaweeds",
-          descriptionKr: "",
-          price: "14.95",
-        },
-      ],
+      category_image: data.allStoneBibimBapCsv.nodes[0]?.category_image,
+      category_note: data.allStoneBibimBapCsv.nodes[0]?.category_note,
+      category_title: data.allStoneBibimBapCsv.nodes[0]?.category_title,
+      category_title_kr: data.allStoneBibimBapCsv.nodes[0]?.category_title_kr,
+      items: data.allStoneBibimBapCsv.nodes,
     },
     {
-      image: seafoodSundubu.childImageSharp.fluid,
-      title: "Tofu Hot pot",
-      titleKr: "전골",
-      note: "Serves 1-2 people and comes with rice",
-      items: [
-        {
-          id: "HP1",
-          name: "Tofu Dumpling Hot Pot",
-          nameKr: "순두부 만두 전골",
-          description:
-            "House made tofu + Pork dumplings + Assorted vegetables + Kimchi",
-          descriptionKr: "",
-          price: "29.95",
-        },
-        {
-          id: "HP2",
-          name: "Tofu intestine Hot Pot",
-          nameKr: "순두부 내장 전골",
-          description:
-            "House made tofu + Mushroom medley + Assorted vegetables + Intestine",
-          descriptionKr: "",
-          price: "32.95",
-        },
-        {
-          id: "HP3",
-          name: "Tofu Seafood Hot Pot",
-          nameKr: "순두부 해물전골 ",
-          description:
-            "House made tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more)",
-          descriptionKr: "",
-          price: "39.95",
-        },
-
-        {
-          id: "HP4",
-          name: "Beef Bulgogi Hot Pot",
-          nameKr: "전통 소불고기",
-          description:
-            "Korean BBQ style marinated ribeye beef + broth + tofu + mushrooms + noodles + and assorted vegetables in a large pot",
-          descriptionKr: "",
-          price: "28.95",
-        },
-        {
-          id: "HP5",
-          name: "Spicy Pork Bulgogi Hot Pot",
-          image: porkTraditional.childImageSharp.fluid,
-          nameKr: "매운 돼지 불고기",
-          description:
-            "Korean BBQ style marinated pork + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
-          descriptionKr: "",
-          price: "28.95",
-        },
-        {
-          id: "HP6",
-          name: "Brisket Hot Pot",
-          image: "",
-          nameKr: "차돌 전골",
-          description:
-            "Korean brisket + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot",
-          descriptionKr: "",
-          price: "31.95",
-        },
-        // {
-        //   id: "HP7",
-        //   image: "",
-        //   name: "Pork Soybean Curd",
-        //   nameKr: "콩비지",
-        //   description: "Kongbiji: house-made ground soybean, pork, kimchi",
-        //   descriptionKr: "",
-        //   price: "21.95",
-        // },
-      ],
+      category_image: data.allTofuHotPotCsv.nodes[0]?.category_image,
+      category_note: data.allTofuHotPotCsv.nodes[0]?.category_note,
+      category_title: data.allTofuHotPotCsv.nodes[0]?.category_title,
+      category_title_kr: data.allTofuHotPotCsv.nodes[0]?.category_title_kr,
+      items: data.allTofuHotPotCsv.nodes,
     },
     {
-      image: "",
-      title: "Noodles",
-      titleKr: "국수",
-      note: "",
-      items: [
-        {
-          id: "N1",
-          name: "Soft Tofu Seafood Spicy Noodles",
-          nameKr: "순두부 해물 칼국수",
-          description: "",
-          descriptionKr: "",
-          price: "16.50",
-        },
-        {
-          id: "N2",
-          name: "Cold Noodle Soup",
-          nameKr: "물냉면",
-          description:
-            "Cold noodles served in a chilled broth made from beef and/or Korean radish water kimchi",
-          descriptionKr: "",
-          price: "11.50",
-        },
-        {
-          id: "N3",
-          name: "Spicy Cold Noodles",
-          nameKr: "비빔냉면",
-          description: "Cold buckwheat noodles mixed with a spicy sauce",
-          descriptionKr: "",
-          price: "11.50",
-        },
-        {
-          id: "N4",
-          name: "Cold soy milk noodle soup",
-          nameKr: "콩국수",
-          description: "Seasonal noodle dish served in a cold soy milk broth",
-          descriptionKr: "",
-          price: "11.50",
-        },
-      ],
+      category_image: data.allNoodlesCsv.nodes[0]?.category_image,
+      category_note: data.allNoodlesCsv.nodes[0]?.category_note,
+      category_title: data.allNoodlesCsv.nodes[0]?.category_title,
+      category_title_kr: data.allNoodlesCsv.nodes[0]?.category_title_kr,
+      items: data.allNoodlesCsv.nodes,
     },
-    // {
-    //   image: "",
-    //   title: "Bossam",
-    //   titleKr: "",
-    //   note: "Serves 2-3 people and comes with rice",
-    //   items: [
-    //     // {
-    //     //   id: "",
-    //     //   name: "Bossam",
-    //     //   nameKr: "보쌈",
-    //     //   description:
-    //     //     "Steamed sliced pork belly + Sliced garlic + Assorted veggie wraps + Jalapeno + Shrimp sauce",
-    //     //   descriptionKr: "",
-    //     //   price: "29.50",
-    //     // },
-
-    //   ],
-    // },
     {
-      image: dubuSalad.childImageSharp.fluid,
-      title: "Vegetarian",
-      titleKr: "No Fish or Meat",
-      note: "",
-      items: [
-        {
-          id: "V1",
-          name: "Fresh Soft Tofu Salad",
-          nameKr: "순두부 샐러드",
-          description:
-            "Fresh mixed greens topped with house made tofu and our special soy salad dressing",
-          descriptionKr: "",
-          price: "11.50",
-        },
-        {
-          id: "V2",
-          name: "Vegetarian Korean Miso Soft Tofu Soup",
-          nameKr: "된장 순두부",
-          description:
-            "Korean miso broth, house made soft tofu, and assorted vegetables",
-          descriptionKr: "",
-          price: "12.50",
-        },
-        {
-          id: "V3",
-          name: "Vegetarian Kimchi Soft Tofu Soup",
-          nameKr: "김치 순두부",
-          description: "House made soft tofu, veggies, and kimchi",
-          descriptionKr: "",
-          price: "12.50",
-        },
-        // {
-        //   id: "V4",
-        //   name: "Vegetarian Seaweed Soft Tofu Soup",
-        //   nameKr: "해초 순두부",
-        //   description:
-        //     "Assorted seaweed, house made soft tofu, assorted vegetables, and kimchi",
-        //   descriptionKr: "",
-        //   price: "12.50",
-        // },
-        {
-          id: "V5",
-          name: "Vegetable Soft Tofu Soup",
-          nameKr: "야채 순두부",
-          description: "Mixed vegetables, house made soft tofu, and kimchi",
-          descriptionKr: "",
-          price: "11.90",
-        },
-        {
-          id: "V6",
-          name: "Vegetarian Kimchi Hot Stone Bibimbap",
-          nameKr: "김치 돌솥",
-          description: "Kimchi and assortment of vegetables",
-          descriptionKr: "",
-          price: "13.95",
-        },
-        {
-          id: "V7",
-          name: "Vegetarian Seaweed Hot Stone Bibimbap",
-          nameKr: "해초 돌솥",
-          description: "Assorted seaweed and vegetables",
-          descriptionKr: "",
-          price: "14.95",
-        },
-        {
-          id: "V8",
-          name: "Vegetarian Tofu Hot Stone Bibimbap",
-          nameKr: "순두부 돌솥",
-          description: "Tofu, and assortment of vegetables",
-          descriptionKr: "",
-          price: "13.95",
-        },
-      ],
+      category_image: data.allVegetarianCsv.nodes[0]?.category_image,
+      category_note: data.allVegetarianCsv.nodes[0]?.category_note,
+      category_title: data.allVegetarianCsv.nodes[0]?.category_title,
+      category_title_kr: data.allVegetarianCsv.nodes[0]?.category_title_kr,
+      items: data.allVegetarianCsv.nodes,
     },
   ]
+  console.log("foodCategories", foodCategories)
 
   const beverageandDeserts: MenuItem[] = [
-    // {
-    //   image: "",
-    //   title: "A. Traditional Korean Drink",
-    //   titleKr: "",
-    //   items: [
-    //     {
-    //       id: "HT1",
-    //       name: "Soy Milk/Pomegranate Tea",
-    //       nameKr: "",
-    //       price: "4.50",
-    //     },
-    //     {
-    //       id: "DT2",
-    //       name: "Soy Milk/Green Tea",
-    //       nameKr: "",
-    //       price: "4.50",
-    //     },
-    //     {
-    //       id: "HT3",
-    //       name: "Soy Milk/Plum Tea",
-    //       nameKr: "",
-    //       price: "4.50",
-    //     },
-    //     {
-    //       id: "DT4",
-    //       name: "Soy Milk/Strawberry",
-    //       nameKr: "",
-    //       price: "4.50",
-    //     },
-    //     {
-    //       id: "HT5",
-    //       name: "Soy Milk/Jujube Tea",
-    //       nameKr: "",
-    //       price: "4.50",
-    //     },
-    //     {
-    //       id: "DT6",
-    //       name: "Soy Milk/Raw Honey Tea",
-    //       nameKr: "",
-    //       price: "4.90",
-    //     },
-    //   ],
-    // },
     {
-      image: "",
-      title: "Pepsi Products - $2.50",
-      titleKr: "",
-      items: [
-        {
-          id: "",
-          name: "Mountain Dew",
-          nameKr: "",
-          price: "",
-        },
-        {
-          id: "",
-          name: "Pepsi",
-          nameKr: "",
-          price: "",
-        },
-        {
-          id: "",
-          name: "Diet Pepsi",
-          nameKr: "",
-          price: "",
-        },
-        {
-          id: "",
-          name: "Tropicana Lemonade",
-          nameKr: "",
-          price: "",
-        },
-        {
-          id: "",
-          name: "Sierra Mist",
-          nameKr: "",
-          price: "",
-        },
-        {
-          id: "",
-          name: "Dr. Pepper",
-          nameKr: "",
-          price: "",
-        },
-        {
-          id: "",
-          name: "Ice Tea (sweetened or unsweetened)",
-          nameKr: "",
-          price: "",
-        },
-      ],
+      category_title: data.allPepsiProductsCsv.nodes[0]?.category_title,
+      category_title_kr: data.allPepsiProductsCsv.nodes[0]?.category_title_kr,
+      category_price: data.allPepsiProductsCsv.nodes[0]?.category_price,
+      category_image: data.allPepsiProductsCsv.nodes[0]?.category_image,
+      items: data.allPepsiProductsCsv.nodes,
     },
     {
-      image: "",
-      title: "Liquor",
-      titleKr: "",
-      items: [
-        {
-          id: "",
-          name: "Soju",
-          nameKr: "소주",
-          price: "10.90",
-        },
-        {
-          id: "",
-          name: "Baekseju",
-          nameKr: "백세주",
-          price: "11.95",
-        },
-        {
-          id: "",
-          name: "Beer",
-          nameKr: "맥주",
-          price: "6.90",
-        },
-        {
-          id: "",
-          name: "Rice-Wine",
-          nameKr: "막걸리",
-          price: "9.90",
-        },
-      ],
+      category_title: data.allLiquorCsv.nodes[0]?.category_title,
+      category_title_kr: data.allLiquorCsv.nodes[0]?.category_title_kr,
+      category_price: data.allLiquorCsv.nodes[0]?.category_price,
+      category_image: data.allLiquorCsv.nodes[0]?.category_image,
+      items: data.allLiquorCsv.nodes,
     },
-    // {
-    //   image: "",
-    //   title: "D. Dessert",
-    //   titleKr: "",
-    //   items: [
-    //     {
-    //       id: "",
-    //       name: "Soft Tofu Frozen Yogurt",
-    //       nameKr: "",
-    //       price: "3.50",
-    //     },
-    //     {
-    //       id: "",
-    //       name: "Soy Milk Snowflake Bingsoo",
-    //       nameKr: "",
-    //       price: "9.90",
-    //     },
-    //     {
-    //       id: "",
-    //       name: "Additional Toppings (Strawberry/Mango/Blueberry)",
-    //       nameKr: "",
-    //       price: "1.50",
-    //     },
-    //   ],
-    // },
   ]
 
   const [modalImage, setModalImage] = useState("")
 
   return (
     <>
-      <Img fluid={heroImg.childImageSharp.fluid} alt="The Stone Tofu" />
+      <GatsbyImage
+        image={data.heroImg.childImageSharp.gatsbyImageData}
+        alt="The Stone Tofu"
+      />
       <MenuList className="margins">
-        {foods.map((food, i) => (
+        {foodCategories.map((food, i) => (
           <Accordion
-            title={`${i + 1}. ${food.title} ${
-              food.titleKr && `(${food.titleKr})`
+            title={`${i + 1}. ${food.category_title} ${
+              food.category_title_kr && `(${food.category_title_kr})`
             }`}
           >
-            <li className="food-category" key={food.title}>
-              {food.image && <Img fluid={food.image} alt={food.title} />}
+            <li className="food-category" key={food.category_title}>
+              {/* {food.category_image && (
+                <GatsbyImage
+                  image={
+                    data[food.category_image].childImageSharp.gatsbyImageData
+                  }
+                  alt={food.category_title}
+                />
+              )} */}
 
-              {food.note && <p className="note">- {food.note}</p>}
+              {food.category_note && (
+                <p className="note">- {food.category_note}</p>
+              )}
               <ul>
                 {food.items.map(item => (
                   <li key={item.id} className="food-item">
                     <div>
                       <h5 className="food-name">
                         {item.id && item.id + "."}{" "}
-                        {item.nameKr && item.nameKr + ":"} {item.name}{" "}
+                        {item.name_kr && item.name_kr + ":"} {item.name}{" "}
                         {item.image && (
                           <Icon
                             name="image"
@@ -951,20 +421,23 @@ export function Menu() {
             </li>
           </Accordion>
         ))}
-        <Accordion title={`${foods.length + 1}. Beverages`}>
+        <Accordion title={`${foodCategories.length + 1}. Beverages`}>
           <div>
-            {beverageandDeserts.map(food => (
-              <li className="food-category" key={food.title}>
+            {beverageandDeserts.map(beverage => (
+              <li className="food-category" key={beverage.category_title}>
                 <h5 className="beverage-title">
-                  {food.title} {food.titleKr && `(${food.titleKr})`}
+                  {beverage.category_title}{" "}
+                  {beverage.category_title_kr &&
+                    `(${beverage.category_title_kr})`}
+                  {beverage?.category_price && ` - $${beverage.category_price}`}
                 </h5>
-                {food.items && (
+                {beverage.items && (
                   <ul>
-                    {food.items.map(item => (
+                    {beverage.items.map(item => (
                       <li key={item.id} className="beverage-item">
                         <p className="beverage-name">
-                          {item.id && item.id + "."}{" "}
-                          {item.nameKr && item.nameKr + ":"} {item.name}
+                          {/* {item.id && item.id + "."}{" "} */}
+                          {item.name_kr && item.name_kr + ":"} {item.name}
                         </p>
                         {item.price && <h5 className="price">${item.price}</h5>}
                       </li>
@@ -978,7 +451,12 @@ export function Menu() {
         {/* <MenuKey /> */}
       </MenuList>
       <Modal isActive={!!modalImage} closeAction={() => setModalImage("")}>
-        {modalImage && <Img fluid={modalImage} />}
+        {modalImage && (
+          <GatsbyImage
+            alt="Menu Item"
+            image={data[modalImage].childImageSharp.gatsbyImageData}
+          />
+        )}
       </Modal>
     </>
   )

@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { graphql, navigate } from "gatsby"
-import Img from "gatsby-image"
+import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Wrapper, Cols } from "../styles"
@@ -30,7 +29,7 @@ function encode(data) {
     .join("&")
 }
 
-export default function ContactPage({ location, data }) {
+export default function ContactPage({ location }) {
   const [state, setState] = useState({})
   const [error, setError] = useState("")
 
@@ -61,9 +60,9 @@ export default function ContactPage({ location, data }) {
         setError("Form could not be submitted. Please try again later.")
       })
   }
+
   return (
     <Layout location={location}>
-      {/* <HeroImg fluid={data.heroImg.childImageSharp.fluid} /> */}
       <Wrapper>
         <div className="container">
           <Cols css="grid-gap: 6rem;">
@@ -181,22 +180,6 @@ const Social = styled.div`
         &:hover * {
           transition: 0.3s ease all;
           fill: var(--red);
-        }
-      }
-    }
-  }
-`
-
-const HeroImg = styled(Img)`
-  max-height: 30rem;
-`
-
-export const query = graphql`
-  query {
-    heroImg: file(relativePath: { eq: "stove.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
