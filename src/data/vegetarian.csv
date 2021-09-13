@@ -1,8 +1,10 @@
 id,name,name_kr,description,description_kr,price,image,category_title,category_title_kr,category_note,category_image
 V1,Fresh Soft Tofu Salad,순두부 샐러드,Fresh mixed greens topped with house made tofu and our special soy salad dressing,,11.50,,Vegetarian,No Fish or Meat,,dubuSalad
-V2,Vegetarian Korean Miso Soft Tofu Soup,된장 순두부,"Korean miso broth, house made soft tofu, and assorted vegetables",,12.50,,,,,
-V3,Vegetarian Kimchi Soft Tofu Soup,김치 순두부,"House made soft tofu, veggies, and kimchi",,12.50,,,,,
-V5,Vegetable Soft Tofu Soup,야채 순두부,"Mixed vegetables, house made soft tofu, and kimchi",,11.90,,,,,
+V2,Vegetarian Korean Miso Soft Tofu Soup,된장 순두부,"Korean miso broth, house made soft tofu, and assorted vegetables",,14.50,,,,,
+V3,Vegetarian Kimchi Soft Tofu Soup,김치 순두부,"House made soft tofu, veggies, and kimchi",,14.50,,,,,
+V4,Vegetarian Mushroom Soft Tofu Soup,버섯 순두부,"House made soft tofu, veggies, and kimchi + Mushroom",,14.5,,,,,
+V5,Vegetarian Vegetable Soft Tofu Soup,야채 순두부,House made tofu with assorted vegetables,,13.5,,,,,
 V6,Vegetarian Kimchi Hot Stone Bibimbap,김치 돌솥,Kimchi and assortment of vegetables,,13.95,,,,,
 V7,Vegetarian Seaweed Hot Stone Bibimbap,해초 돌솥,Assorted seaweed and vegetables,,14.95,,,,,
 V8,Vegetarian Tofu Hot Stone Bibimbap,순두부 돌솥,"Tofu, and assortment of vegetables",,13.95,,,,,
+V9,Vegetarian Tofu Hot Pot,순두부 전골,"Tofu, and assortment of vegetables, Comes with 2 bowl of rice",,28.5,,,,,

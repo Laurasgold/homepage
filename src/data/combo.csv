@@ -1,8 +1,8 @@
 id,name,name_kr,description,description_kr,price,image,category_title,category_title_kr,category_note,category_image
-C2,LA Style Ribs Combo,LA 갈비 콤보,LA style ribs + Your choice of soft tofu soup or noodles,,22.95,,Combo,순두부 콤보,Comes with a serving of stone pot rice,sundubu
-C4,Spicy Korean Chicken Combo,닭 불고기 콤보,Spicy korean chicken + Your choice of soft tofu soup or noodles,,19.95,,,,,
-C5,Beef Bulgogi Combo,소불고기 콤보,Korean BBQ style beef bulgogi + Your choice of soft tofu soup or noodles,,21.95,,,,,
-C6,Yellow Pollack Combo,황태구이 콤보,Grilled yellow pollack + Your choice of soft tofu soup or noodles,,19.95,yellowPollock,,,,
-C7,Spicy Pork Combo,돼지불고기 콤보,Korean BBQ style spicy pork + Your choice of soft tofu soup or noodles,,19.95,,,,,
-C8,Intestine Combo,곱창 콤보,Grilled Intestine + Your choice of soft tofu soup or noodles,,21.95,,,,,
-C9,Brisket Combo,차돌 콤보,Marinated brisket + Your choice of soft tofu soup or noodles,,21.95,,,,,
+C2,LA Style Ribs Combo,LA 갈비 콤보,LA style ribs + Your choice of soft tofu soup ,,24.95,,Combo,순두부 콤보,Comes with a serving of stone pot rice,sundubu
+C4,Spicy Korean Chicken Combo,닭 불고기 콤보,Spicy korean chicken + Your choice of soft tofu soup ,,21.95,,,,,
+C5,Beef Bulgogi Combo,소불고기 콤보,Korean BBQ style beef bulgogi + Your choice of soft tofu soup ,,22.95,,,,,
+C6,Spicy Pork Combo,돼지불고기 콤보,Korean BBQ style spicy pork + Your choice of soft tofu soup ,,21.95,,,,,
+C7,Intestine Combo,곱창 콤보,Grilled Intestine + Your choice of soft tofu soup ,,22.95,,,,,
+C8,Brisket Combo,차돌 콤보,Marinated brisket + Your choice of soft tofu soup ,,22.95,,,,,
+C9,Yellow Pollack Combo,황태구이 콤보,Grilled marinated with spice  yellow pollack (dry fich) + your choice of tofu soup,,22.95,,,,,
