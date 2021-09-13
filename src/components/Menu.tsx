@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Modal from "./Modal"
 import Icon from "./Icon"
+import heroImg from "../images/stone-img.jpeg"
 // import { MenuKey, keyItems } from "./MenuKey"
 import { Accordion } from "./Accordion"
 
@@ -342,7 +343,6 @@ export function Menu() {
       items: data.allVegetarianCsv.nodes,
     },
   ]
-  console.log("foodCategories", foodCategories)
 
   const beverageandDeserts: MenuItem[] = [
     {
@@ -365,10 +365,7 @@ export function Menu() {
 
   return (
     <>
-      <GatsbyImage
-        image={data.heroImg.childImageSharp.gatsbyImageData}
-        alt="The Stone Tofu"
-      />
+      <img src={heroImg} alt="The Stone Tofu" style={{ margin: "0 auto" }} />
       <MenuList className="margins">
         {foodCategories.map((food, i) => (
           <Accordion
@@ -377,14 +374,14 @@ export function Menu() {
             }`}
           >
             <li className="food-category" key={food.category_title}>
-              {/* {food.category_image && (
+              {food.category_image && (
                 <GatsbyImage
                   image={
                     data[food.category_image].childImageSharp.gatsbyImageData
                   }
                   alt={food.category_title}
                 />
-              )} */}
+              )}
 
               {food.category_note && (
                 <p className="note">- {food.category_note}</p>
