@@ -374,14 +374,14 @@ export function Menu() {
             }`}
           >
             <li className="food-category" key={food.category_title}>
-              {food.category_image && (
+              {/* {food.category_image && (
                 <GatsbyImage
                   image={
                     data[food.category_image].childImageSharp.gatsbyImageData
                   }
                   alt={food.category_title}
                 />
-              )}
+              )} */}
 
               {food.category_note && (
                 <p className="note">- {food.category_note}</p>
