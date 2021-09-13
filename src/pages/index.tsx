@@ -1,38 +1,25 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { getImage, GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Button } from "../components/Button"
 import { Wrapper, Grid } from "../styles"
 
-import bibimbap from "../images/menu/bibimbap.jpg"
-import cheodangSundubu from "../images/menu/cheodang-sundubu.jpg"
-import dorsolBibimbap from "../images/menu/dorsol-bibimbap.jpg"
-import dubuSalad from "../images/menu/dubu-salad.jpg"
-import dwenjangSundubu from "../images/menu/dwenjang-sundubu.jpg"
-import gopjangSundubu from "../images/menu/gopjang-sundubu.jpg"
-import manduSundubu from "../images/menu/mandu-sundubu.jpg"
-import nengkongKarlgugsu from "../images/menu/nengkong-kargugsu.jpg"
-import seafoodSundubu from "../images/menu/seafood-sundubu-jungle.jpg"
-import sundubu from "../images/menu/sundubu.jpg"
-
 const IndexPage = ({ data, location }) => {
-  if (!data) return null
-
   const {
     heroImg,
-    // bibimbap,
-    // cheodangSundubu,
-    // dorsolBibimbap,
-    // dubuSalad,
-    // dwenjangSundubu,
-    // gopjangSundubu,
-    // manduSundubu,
-    // nengkongKarlgugsu,
-    // seafoodSundubu,
-    // sundubu,
+    bibimbap,
+    cheodangSundubu,
+    dorsolBibimbap,
+    dubuSalad,
+    dwenjangSundubu,
+    gopjangSundubu,
+    manduSundubu,
+    nengkongKarlgugsu,
+    seafoodSundubu,
+    sundubu,
   } = data
 
   const images = [
@@ -161,7 +148,7 @@ const IndexPage = ({ data, location }) => {
         <div>
           <Grid cols={[1, 1, 2]} className="container">
             {images.map(({ image, alt }) => (
-              <img src={image} alt={alt} />
+              <GatsbyImage image={getImage(image)} alt={alt} />
             ))}
           </Grid>
         </div>
@@ -187,59 +174,59 @@ export const query = graphql`
       }
     }
     # Menu items
-    # bibimbap: file(relativePath: { eq: "menu/bibimbap.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # cheodangSundubu: file(relativePath: { eq: "menu/cheodang-sundubu.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # dorsolBibimbap: file(relativePath: { eq: "menu/dorsol-bibimbap.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # dubuSalad: file(relativePath: { eq: "menu/dubu-salad.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # dwenjangSundubu: file(relativePath: { eq: "menu/dwenjang-sundubu.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # gopjangSundubu: file(relativePath: { eq: "menu/gopjang-sundubu.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # manduSundubu: file(relativePath: { eq: "menu/mandu-sundubu.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # nengkongKarlgugsu: file(
-    #   relativePath: { eq: "menu/nengkong-kargugsu.jpg" }
-    # ) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # seafoodSundubu: file(
-    #   relativePath: { eq: "menu/seafood-sundubu-jungle.jpg" }
-    # ) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
-    # sundubu: file(relativePath: { eq: "menu/sundubu.jpg" }) {
-    #   childImageSharp {
-    #     gatsbyImageData
-    #   }
-    # }
+    bibimbap: file(relativePath: { eq: "menu/bibimbap.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    cheodangSundubu: file(relativePath: { eq: "menu/cheodang-sundubu.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    dorsolBibimbap: file(relativePath: { eq: "menu/dorsol-bibimbap.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    dubuSalad: file(relativePath: { eq: "menu/dubu-salad.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    dwenjangSundubu: file(relativePath: { eq: "menu/dwenjang-sundubu.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    gopjangSundubu: file(relativePath: { eq: "menu/gopjang-sundubu.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    manduSundubu: file(relativePath: { eq: "menu/mandu-sundubu.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    nengkongKarlgugsu: file(
+      relativePath: { eq: "menu/nengkong-kargugsu.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    seafoodSundubu: file(
+      relativePath: { eq: "menu/seafood-sundubu-jungle.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    sundubu: file(relativePath: { eq: "menu/sundubu.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
   }
 `

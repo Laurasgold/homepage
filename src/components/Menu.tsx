@@ -1,10 +1,9 @@
 import React, { Key, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Modal from "./Modal"
 import Icon from "./Icon"
-import heroImg from "../images/stone-img.jpeg"
 // import { MenuKey, keyItems } from "./MenuKey"
 import { Accordion } from "./Accordion"
 
@@ -365,7 +364,7 @@ export function Menu() {
 
   return (
     <>
-      <img src={heroImg} alt="The Stone Tofu" style={{ margin: "0 auto" }} />
+      <GatsbyImage image={getImage(data.heroImg)} alt="The Stone Tofu" />
       <MenuList className="margins">
         {foodCategories.map((food, i) => (
           <Accordion
@@ -374,14 +373,14 @@ export function Menu() {
             }`}
           >
             <li className="food-category" key={food.category_title}>
-              {/* {food.category_image && (
+              {food.category_image && (
                 <GatsbyImage
                   image={
                     data[food.category_image].childImageSharp.gatsbyImageData
                   }
                   alt={food.category_title}
                 />
-              )} */}
+              )}
 
               {food.category_note && (
                 <p className="note">- {food.category_note}</p>

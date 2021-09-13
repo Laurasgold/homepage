@@ -27,6 +27,7 @@ module.exports = {
     },
     `gatsby-transformer-csv`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     "gatsby-plugin-robots-txt",
