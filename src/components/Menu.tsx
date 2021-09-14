@@ -133,6 +133,13 @@ export function Menu() {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      porkKimchiTofu: file(
+        relativePath: { eq: "menu/pork-belly-kimchi-tofu.jpeg" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       # Categories
       allComboCsv {
         nodes {
