@@ -373,7 +373,7 @@ export function Menu() {
     <>
       <HappyHour>
         <h4>Happy Hour</h4>
-        <p>Mon-Fri 3PM-5PM</p>
+        <p>Mon-Fri 3PM-6PM</p>
         <h4 className="soju">$5 Soju!</h4>
       </HappyHour>
       <GatsbyImage image={getImage(data.heroImg)} alt="The Stone Tofu" />
