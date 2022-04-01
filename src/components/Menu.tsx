@@ -274,6 +274,19 @@ export function Menu() {
           name_kr
         }
       }
+      allOtherBeveragesCsv {
+        nodes {
+          category_image
+          category_price
+          category_title
+          category_title_kr
+          image
+          id
+          name_kr
+          name
+          price
+        }
+      }
       allPepsiProductsCsv {
         nodes {
           category_image
@@ -357,6 +370,13 @@ export function Menu() {
       category_price: data.allPepsiProductsCsv.nodes[0]?.category_price,
       category_image: data.allPepsiProductsCsv.nodes[0]?.category_image,
       items: data.allPepsiProductsCsv.nodes,
+    },
+    {
+      category_title: data.allOtherBeveragesCsv.nodes[0]?.category_title,
+      category_title_kr: data.allOtherBeveragesCsv.nodes[0]?.category_title_kr,
+      category_price: data.allOtherBeveragesCsv.nodes[0]?.category_price,
+      category_image: data.allOtherBeveragesCsv.nodes[0]?.category_image,
+      items: data.allOtherBeveragesCsv.nodes,
     },
     {
       category_title: data.allLiquorCsv.nodes[0]?.category_title,

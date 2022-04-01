@@ -1,2 +1,5 @@
 id,name,name_kr,description,description_kr,price,image,category_title,category_title_kr,category_note,category_image
 N1,Soft Tofu Seafood Spicy Noodles,순두부 해물 칼국수,,,18.50,,Noodles,국수,,
+N2,Cold Spicy Noodles,비빔 냉면,Chilled Buckwheat Spicy Noodle ,,12.50,,,,,
+N3,Cold Soup Noodles,물 냉면,Chilled Buckwheat Noodle Soup ,,12.50,,,,,
+N4,Soy Milk and Noolde,콩 국수,Chilled Soy Milk with Wheat Noodle,,12.50,,,,,
