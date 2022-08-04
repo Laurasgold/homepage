@@ -391,11 +391,11 @@ export function Menu() {
 
   return (
     <>
-      <HappyHour>
+      {/* <HappyHour>
         <h4>Happy Hour</h4>
         <p>Mon-Fri 3PM-6PM</p>
         <h4 className="soju">$5 Good Day Soju!</h4>
-      </HappyHour>
+      </HappyHour> */}
       <GatsbyImage image={getImage(data.heroImg)} alt="The Stone Tofu" />
 
       <MenuList className="margins">
@@ -495,27 +495,27 @@ export function Menu() {
   )
 }
 
-const HappyHour = styled.div`
-  border: 2px solid var(--red);
-  h4 {
-    margin: 0;
-    font-weight: normal;
-  }
-  .soju {
-    margin: 1rem 0 0;
-    background: var(--lightesterGray);
-    color: var(--red);
-    padding: var(--cardPadding);
-    font-weight: bold;
-  }
-  p {
-    margin: 0;
-  }
-  margin: 0;
-  text-align: center;
-  background: var(--red);
-  color: var(--white);
-`
+// const HappyHour = styled.div`
+//   border: 2px solid var(--red);
+//   h4 {
+//     margin: 0;
+//     font-weight: normal;
+//   }
+//   .soju {
+//     margin: 1rem 0 0;
+//     background: var(--lightesterGray);
+//     color: var(--red);
+//     padding: var(--cardPadding);
+//     font-weight: bold;
+//   }
+//   p {
+//     margin: 0;
+//   }
+//   margin: 0;
+//   text-align: center;
+//   background: var(--red);
+//   color: var(--white);
+// `
 
 const Notice = styled.p`
   font-size: small;
