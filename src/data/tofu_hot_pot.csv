@@ -1,7 +1,6 @@
 id,name,name_kr,description,description_kr,price,image,category_title,category_title_kr,category_note,category_image
-HP1,Tofu Dumpling Hot Pot,두부 만두 전골,House made tofu + Pork dumplings + Assorted vegetables + Kimchi,,32.95,,Tofu Hot Pot,전골,Serves 1-2 people and comes with rice,seafoodSundubu
-HP2,Tofu intestine Hot Pot,두부 내장 전골,House made tofu + Mushroom medley + Assorted vegetables + Intestine,,34.95,,,,,
+HP1,Tofu Dumpling Hot Pot,두부 만두 전골,House made tofu + Pork dumplings + Assorted vegetables + Kimchi,,33.95,,Tofu Hot Pot,전골,Serves 1-2 people and comes with rice,seafoodSundubu
+HP2,Tofu intestine Hot Pot,두부 내장 전골,House made tofu + Mushroom medley + Assorted vegetables + Intestine,,35.95,,,,,
 HP3,Tofu Seafood Hot Pot,두부 해물전골,House made tofu + Seafood medley (baby octopus + shrimp + abalone + clams + squid and more),,39.95,,,,,
-HP4,Beef Bulgogi Hot Pot,전통 소불고기,Korean BBQ style marinated ribeye beef + broth + tofu + mushrooms + noodles + and assorted vegetables in a large pot,,34.95,,,,,
-HP5,Brisket Hot Pot,차돌 전골,Korean brisket + broth + tofu + mushrooms + noodles + assorted vegetables in a large pot,,34.95,,,,,
-HP6,Stone Bulgogi Hot Pot,뚝 불고기,One person size of Beef bulgogi + clear noodle + mushroom+ veggies,,18.95,,,,,
+HP4,Beef Bulgogi Hot Pot,전통 소불고기,Korean BBQ style marinated ribeye beef + broth + tofu + mushrooms + noodles + and assorted vegetables in a large pot,,35.95,,,,,
+HP6,Stone Bulgogi Hot Pot,뚝 불고기,One person size of Beef bulgogi + clear noodle + mushroom+ veggies,,19.95,,,,,
