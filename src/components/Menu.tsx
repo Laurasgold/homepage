@@ -6,6 +6,7 @@ import Modal from "./Modal"
 import Icon from "./Icon"
 // import { MenuKey, keyItems } from "./MenuKey"
 import { Accordion } from "./Accordion"
+import { Card, Grid } from "../styles"
 
 type Item = {
   id: string
@@ -25,6 +26,33 @@ type MenuItem = {
   category_price?: string
   items?: Item[]
 }
+
+// Note: HARDCODED for now, not from CSV data
+const SOUPS_TO_SHOW = [
+  "Dumpling Soft Tofu Soup",
+  "Korean Miso Soft Tofu Soup",
+  "Beef Soft Tofu Soup",
+  "Oyster Soft Tofu Soup",
+  "Intestine Soft Tofu Soup",
+  "Seafood Soft Tofu Soup",
+  "Kimchi Soft Tofu Soup (with Pork)",
+  "Ham & Sausage Tofu Soup",
+  "Mushroom Soft Tofu Soup",
+]
+
+// Note: HARDCODED for now, not from CSV data
+const NOODLES_TO_SHOW = [
+  "Cold Spicy Noodles",
+  "Cold Soup Noodles",
+  "Soy Milk and Noodles",
+]
+
+const VEGETARIAN_TO_SHOW = [
+  "Vegetarian Korean Miso Soft Tofu Soup",
+  "Vegetarian Kimchi Soft Tofu Soup",
+  "Vegetarian Mushroom Soft Tofu Soup",
+  "Vegetarian Vegetable Soft Tofu Soup",
+]
 
 export function Menu() {
   const data = useStaticQuery(graphql`
@@ -414,10 +442,53 @@ export function Menu() {
                   alt={food.category_title}
                 />
               )}
-
               {food.category_note && (
                 <p className="note">- {food.category_note}</p>
               )}
+
+              {food.category_title === "Combo" && (
+                <div>
+                  <h5
+                    className="black-text"
+                    style={{
+                      margin:
+                        "var(--cardPadding) var(--cardPadding) 0 var(--cardPadding)",
+                    }}
+                  >
+                    Select one of the following:
+                  </h5>
+                  <Grid cols={[1, 2]} hasGridGap={false}>
+                    <Accordion
+                      subtitle="Soups"
+                      style={{ margin: 0 }}
+                      hasBorder={false}
+                      hasPadding={false}
+                    >
+                      <ul className="disc">
+                        {SOUPS_TO_SHOW.map(item => (
+                          <li key={item}>{item}</li>
+                        ))}
+                        {VEGETARIAN_TO_SHOW.map(item => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </Accordion>
+                    <Accordion
+                      subtitle="Noodles"
+                      style={{ margin: 0 }}
+                      hasBorder={false}
+                      hasPadding={false}
+                    >
+                      <ul className="disc">
+                        {NOODLES_TO_SHOW.map(item => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </Accordion>
+                  </Grid>
+                </div>
+              )}
+
               <ul>
                 {food.items.map(item => (
                   <li key={item.id} className="food-item">

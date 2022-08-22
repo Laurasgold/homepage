@@ -20,9 +20,10 @@ export const Flex = styled.div`
 // Used anytime you need a grid of anything.
 // Cards, Images, nearly anything
 // * cols: [1,2,3], 1
-export const Grid = styled.div`
+export const Grid = styled.div<{ hasGridGap?: boolean }>`
   display: grid;
-  grid-gap: var(--basePadding);
+  grid-gap: ${({ hasGridGap = true }) =>
+    hasGridGap ? `var(--basePadding)` : "0"};
   margin: 0 auto;
   ${({ cols = [] }) => {
     if (typeof cols === "object") {
