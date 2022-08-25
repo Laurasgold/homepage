@@ -455,7 +455,7 @@ export function Menu() {
                         "var(--cardPadding) var(--cardPadding) 0 var(--cardPadding)",
                     }}
                   >
-                    Select one of the following:
+                    Select one soup OR noodles:
                   </h5>
                   <Grid cols={[1, 2]} hasGridGap={false}>
                     <Accordion
