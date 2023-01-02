@@ -16,6 +16,7 @@ type Item = {
   description_kr?: string
   price: string
   image?: string
+  seasonal?: "TRUE" | "FALSE"
 }
 
 type MenuItem = {
@@ -197,6 +198,7 @@ export function Menu() {
           name
           name_kr
           price
+          seasonal
         }
       }
       allSpecialTraditionalCsv {
@@ -474,7 +476,12 @@ export function Menu() {
                       </ul>
                     </Accordion>
                     <Accordion
-                      subtitle="Noodles"
+                      subtitle={
+                        <span>
+                          Noodles{"  "}
+                          <Tag>Seasonal</Tag>
+                        </span>
+                      }
                       style={{ margin: 0 }}
                       hasBorder={false}
                       hasPadding={false}
@@ -511,6 +518,7 @@ export function Menu() {
                             }}
                           />
                         )}
+                        {item.seasonal === "TRUE" && <Tag>Seasonal</Tag>}
                       </h5>
                       <p>{item.description}</p>
                     </div>
@@ -643,4 +651,9 @@ const MenuList = styled.ol`
       color: var(--black);
     }
   }
+`
+
+const Tag = styled.span`
+  color: var(--orange);
+  font-size: var(--smallestFontSize);
 `
