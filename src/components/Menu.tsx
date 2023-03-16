@@ -457,7 +457,7 @@ export function Menu() {
                         "var(--cardPadding) var(--cardPadding) 0 var(--cardPadding)",
                     }}
                   >
-                    Select one soup OR noodles:
+                    Select one:
                   </h5>
                   <Grid cols={[1, 2]} hasGridGap={false}>
                     <Accordion
@@ -497,34 +497,36 @@ export function Menu() {
               )}
 
               <ul>
-                {food.items.filter(item => item?.seasonal !== 'TRUE')?.map(item => (
-                  <li key={item.id} className="food-item">
-                    <div>
-                      <h5 className="food-name">
-                        {item.id && item.id + "."}{" "}
-                        {item.name_kr && item.name_kr + ":"} {item.name}{" "}
-                        {item.image && (
-                          <Icon
-                            name="image"
-                            onClick={
-                              item.image
-                                ? () => setModalImage(item.image)
-                                : null
-                            }
-                            color="var(--red)"
-                            style={{
-                              margin: "0 0 -2px var(--halfMargin)",
-                              cursor: "pointer",
-                            }}
-                          />
-                        )}
-                        {item.seasonal === "TRUE" && <Tag>Seasonal</Tag>}
-                      </h5>
-                      <p>{item.description}</p>
-                    </div>
-                    <h5 className="price">${item.price}</h5>
-                  </li>
-                ))}
+                {food.items
+                  .filter(item => item?.seasonal !== "TRUE")
+                  ?.map(item => (
+                    <li key={item.id} className="food-item">
+                      <div>
+                        <h5 className="food-name">
+                          {item.id && item.id + "."}{" "}
+                          {item.name_kr && item.name_kr + ":"} {item.name}{" "}
+                          {item.image && (
+                            <Icon
+                              name="image"
+                              onClick={
+                                item.image
+                                  ? () => setModalImage(item.image)
+                                  : null
+                              }
+                              color="var(--red)"
+                              style={{
+                                margin: "0 0 -2px var(--halfMargin)",
+                                cursor: "pointer",
+                              }}
+                            />
+                          )}
+                          {item.seasonal === "TRUE" && <Tag>Seasonal</Tag>}
+                        </h5>
+                        <p>{item.description}</p>
+                      </div>
+                      <h5 className="price">${item.price}</h5>
+                    </li>
+                  ))}
               </ul>
             </li>
           </Accordion>
