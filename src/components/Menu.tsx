@@ -475,7 +475,7 @@ export function Menu() {
                         ))}
                       </ul>
                     </Accordion>
-                    {/* <Accordion
+                    <Accordion
                       subtitle={
                         <span>
                           Noodles{"  "}
@@ -491,14 +491,14 @@ export function Menu() {
                           <li key={item}>{item}</li>
                         ))}
                       </ul>
-                    </Accordion> */}
+                    </Accordion>
                   </Grid>
                 </div>
               )}
 
               <ul>
                 {food.items
-                  .filter(item => item?.seasonal !== "TRUE")
+                  // .filter(item => item?.seasonal !== "TRUE")
                   ?.map(item => (
                     <li key={item.id} className="food-item">
                       <div>
