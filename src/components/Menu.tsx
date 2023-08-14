@@ -563,6 +563,7 @@ export function Menu() {
       <Notice>
         * Banchan (side dishes) serve up to 3 people. The first plate is free
         and refills are $3.00.
+        <br />* Auto-gratuity of 18% will be added to parties of 6 or more.
       </Notice>
       <Modal isActive={!!modalImage} closeAction={() => setModalImage("")}>
         {modalImage && (
