@@ -1,5 +1,5 @@
 id,name,name_kr,description,description_kr,price,image,seasonal,category_title,category_title_kr,category_note,category_image
-N1,Soft Tofu Seafood Spicy Noodles,순두부 해물 칼국수,,,19.50,,,Noodles,국수,,
+N1,Soft Tofu Seafood Spicy Sujebi,순두부 해물 수제비,"Clams, Mussells, Shrimp, house made soft tofu, assorted vegetables and  dough made with potatoe (=Sujebi)",,19.50,,,,국수,,
 N2,Cold Spicy Noodles,비빔 냉면,Chilled Buckwheat Spicy Noodles,,13.50,,TRUE,,,,
 N3,Cold Soup Noodles,물 냉면,Chilled Buckwheat Noodle Soup ,,13.50,,TRUE,,,,
 N4,Soy Milk and Noodles,콩 국수,Chilled Soy (None GMO organic soy bean) Milk with Wheat Noodles,,14.50,,TRUE,,,,
