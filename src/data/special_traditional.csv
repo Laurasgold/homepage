@@ -1,8 +1,8 @@
 id,name,name_kr,description,description_kr,price,image,category_title,category_title_kr,category_note,category_image
 ST1,Beef Bulgogi,소불고기,Korean BBQ style marinated ribeye beef,,25.95,,Special Traditional,,Serves 1 person and comes with rice,
-ST2,Cheese Beef Bulgogi,치즈 소불고기,Korean BBQ style marinated ribeye beef with Mozzarella cheese,,27.95,,Special Traditional,,Serves 1 person and comes with rice,
+ST2,Beef Bulgogi with Cheese,치즈 소불고기,Korean BBQ style marinated ribeye beef with Mozzarella cheese,,27.95,,Special Traditional,,Serves 1 person and comes with rice,
 ST3,Spicy Pork Bulgogi,매운 돼지 불고기,Korean BBQ style marinated spicy pork,,24.95,,,,,
-ST4,Cheese Spicy Pork Bulgogi with Cheese,치즈 매운 돼지 불고기,Korean BBQ style marinated spicy pork with Mozzarella cheese,,26.95,,,,,
+ST4,Spicy Pork Bulgogi with Cheese,치즈 매운 돼지 불고기,Korean BBQ style marinated spicy pork with Mozzarella cheese,,26.95,,,,,
 ST5,Grilled Spicy Intestines,매운곱창볶음,Marinated spicy beef intestines,,25.95,,,,,
 ST6,Grilled Brisket,차돌박이불고기,Grilled marinated brisket,,25.95,,,,,
 ST7,LA Style Ribs,LA 갈비,Marinated korean BBQ short ribs,,29.95,,,,,
