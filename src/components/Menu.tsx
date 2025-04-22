@@ -46,6 +46,8 @@ const NOODLES_TO_SHOW = [
   "Cold Spicy Noodles",
   "Cold Soup Noodles",
   "Soy Milk and Noodles",
+  "YulMoo Noodles",
+  "YulMoo Neung Myun",
 ]
 
 const VEGETARIAN_TO_SHOW = [
